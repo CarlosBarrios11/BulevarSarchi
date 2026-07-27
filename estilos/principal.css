@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+  align-items: center; /* Alinea verticalmente los elementos en cada fila */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 10px 20px;
+  gap: 10px; /* Espacio entre elementos */
+}
+
+header img {
+  width: 125px;
+  height: 75px;
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+  margin-right: auto; /* Empuja el h1 hacia el centro */
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  flex: 1; /* Ocupa el espacio disponible */
+  order: 1; /* Asegura que esté en la primera fila */
+}
+
+nav {
+  width: 100%; /* Ocupa todo el ancho */
+  order: 3; /* Va en la segunda fila */
+  display: flex;
+  justify-content: center; /* Centra los enlaces del nav */
+  gap: 15px; /* Espacio entre enlaces */
+  flex-wrap: wrap; /* Para que sea responsive */
+}
+
+#hr1 {
+  width: 100%; /* Los hr ocupan todo el ancho */
+  order: 2; /* Después del nav */
+  margin: 0;
+}
+
+#hr2 {
+  width: 100%; /* Los hr ocupan todo el ancho */
+  order: 4; /* Después del nav */
+  margin: 0;
+}
+
+/* Opcional: Estilo para los enlaces del nav */
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
