@@ -1,49 +1,56 @@
+/* modificación de heder --------------------------------------------------------------------------------------------------------------------*/
 header {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
-  align-items: center; /* Alinea verticalmente los elementos en cada fila */
-  justify-content: center; /* Centra horizontalmente */
+  display: flex; /* acomoda todo automaticamente */
+  /* se crea la Flex-Box el padre para acomodar alos hijos en las tablas*/
+  flex-wrap: wrap; /* si no cabe manda las cosas para abajo */
+  align-items: center; /* centra las cosas de arriba a abajo*/
+  justify-content: center; /* centra las cosas de lado a lado*/ 
   padding: 10px 20px;
-  gap: 10px; /* Espacio entre elementos */
+  gap: 10px; /* es el espacio de elemento a elemento */
 }
-
+ 
 header img {
+  /* este es el primer hijo del flex empesando en 0 pero su orden lo decide el margin
+  rste dice que se baya para la izquierda y haci hace te los demas queden del otro lado */
   width: 125px;
   height: 75px;
-  flex-shrink: 0; /* Evita que la imagen se encoja */
-  margin-right: auto; /* Empuja el h1 hacia el centro */
-}
+  flex-shrink: 0; /* se queda en el tamaño que esta */
+  margin-right: auto; /* empuja a la izquierda para dejar espacio para el titulo */
 
+}
+ 
 h1 {
   text-align: center;
   margin: 0;
-  flex: 1; /* Ocupa el espacio disponible */
-  order: 1; /* Asegura que esté en la primera fila */
+  flex: 1; /* ocupa todo el espacio sobre la fila, este es el segundo hijo */
+  order: 1; /* se queda en el piso uno de la fila  */
 }
 
-nav {
-  width: 100%; /* Ocupa todo el ancho */
-  order: 3; /* Va en la segunda fila */
-  display: flex;
-  justify-content: center; /* Centra los enlaces del nav */
-  gap: 15px; /* Espacio entre enlaces */
-  flex-wrap: wrap; /* Para que sea responsive */
-}
 
 #hr1 {
-  width: 100%; /* Los hr ocupan todo el ancho */
-  order: 2; /* Después del nav */
-  margin: 0;
+  width: 100%; 
+  order: 2; /* el tercer hijo del flex */
+  margin: 5px 0;
+}
+ 
+nav {
+  width: 100%; 
+  order: 3; /* el cuarto hijo del flex */
+  display: flex; /* con este dice que sea flexible (pone los nav en filita)  */
+  justify-content: center;
+  gap: 15px; 
+  flex-wrap: wrap; /* si ya no cabe lo hace hacia abajo */
+  padding: 10px 0;
 }
 
 #hr2 {
-  width: 100%; /* Los hr ocupan todo el ancho */
-  order: 4; /* Después del nav */
-  margin: 0;
+  width: 100%; 
+  order: 4; /* quinto hijo del flex */
+  margin: 5px 0;
 }
 
-/* Opcional: Estilo para los enlaces del nav */
-nav a {
+
+nav a { /* para que se vea bonito el nav */
   text-decoration: none;
   color: #333;
   padding: 5px 10px;
