@@ -1,0 +1,8 @@
+.logoTitulo img{
+    object-fit: cover
+}
+
+#carrusel img{
+  width: 400px;
+  height: 480px;
+}
