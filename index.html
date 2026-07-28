@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/headerGeneral.css">
     <title>Bulevar Sarchí</title>
     <meta name="description" content="Bulevar Plaza Sarchí: descubrí los comercios gastronómicos, tienda deportiva y salón de belleza de esta plaza ubicada en Sarchí, Alajuela.">
     <meta name="keywords" content="Bulevar Plaza Sarchí, Sarchí, Alajuela, comercios, restaurantes, plaza comercial">
@@ -12,34 +13,53 @@
 </head>
 <body>
     <header>
-        <!--Insertar Logo-->
-        <img src="img/bulevar/logo bulevar general.jpeg" alt="logo bulevar general">
 
-        <h1>Bulevar Plaza Sarchí</h1>
-        <hr id="hr1">
-        <nav>
-            <a href="index.html">Bulevar</a>
-            <a href="pags/aurum.html">Aurum</a>
-            <a href="pags/bowlo.html">Bowlo</a>
-            <a href="pags/delisSarchi.html">Deli's</a>
-            <a href="pags/distritohumo.html">Distrito Humo</a>
-            <a href="pags/elConvite.html">El Convite</a>
-            <a href="pags/hastaElElote.html">Hasta el Elote</a>
-            <a href="pags/ironfit.html">IronFit</a>
-            <a href="pags/raizTica.html">Raíz Tica Café</a>
-            <a href="pags/rollArt.html">Roll Art</a>
-            <a href="pags/yulyPeraltaSalon.html">Yuly Salón</a>
-        </nav>
-        <hr id="hr2">
+        <div class="logoTitulo">
+            <img src="img/bulevar/logo bulevar general.jpeg" alt="logo bulevar general">
+            <div class="titulo">
+                <h1>Bulevar Plaza Sarchí</h1>
+            </div>
+        </div>
+        <!--Insertar Logo-->
+        
+        <div class="edicionNav">
+            <hr class="hr1">
+            <nav>
+                <a href="index.html">Bulevar</a>
+                <a href="pags/aurum.html">Aurum</a>
+                <a href="pags/bowlo.html">Bowlo</a>
+                <a href="pags/delisSarchi.html">Deli's</a>
+                <a href="pags/distritohumo.html">Distrito Humo</a>
+                <a href="pags/elConvite.html">El Convite</a>
+                <a href="pags/hastaElElote.html">Hasta el Elote</a>
+                <a href="pags/ironfit.html">IronFit</a>
+                <a href="pags/raizTica.html">Raíz Tica Café</a>
+                <a href="pags/rollArt.html">Roll Art</a>
+                <a href="pags/yulyPeraltaSalon.html">Yuly Salón</a>
+            </nav>
+            <hr class="hr2">
+        </div>
     </header>
 
     <main>
-        <video controls width="600">
-            <source src="video/video bulevar.mp4" type="video/mp4">
-            Tu navegador no soporta videos.
-        </video>
+        <header id="mainHeader">
+             <div id="contenedorVideo">
+                <video muted autoplay loop poster="img/bulevar/logo bulevar general.jpeg">
+                    <source src="video/video bulevar.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
 
-        <a href="https://www.google.com/maps/place/3MM5%2B3X9+BULEVAR+PLAZA+SARCH%C3%8D,+Ruta+Nacional+Secundaria+118,+Provincia+de+Alajuela,+Sarch%C3%AD,+Sarch%C3%AD+Sur/data=!4m2!3m1!1s0x8fa0590017cca477:0xdb6ee8f1a7bd3fa8!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI2LjMYACCIJyqVASw5NDI2NzcyNyw5NDI5MjE5NSw5NDI5OTUzMiwxMDA3OTY0OTgsMTAwNzk3NzYxLDEwMDc5NjUzNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjM3QgJDUg%3D%3D&skid=f92f1829-888e-4809-9dd6-f1450158c630">Google Maps</a>
+                <div id="botonMaps">
+                    <button>
+                        <a href="https://www.google.com/maps/place/3MM5%2B3X9+BULEVAR+PLAZA+SARCH%C3%8D,+Ruta+Nacional+Secundaria+118,
+                        +Provincia+de+Alajuela,+Sarch%C3%AD,+Sarch%C3%AD+Sur/data=!4m2!3m1!1s0x8fa0590017cca477:0xdb6ee8f1a7bd3fa8!18m1!1e1
+                        ?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI2LjMYACCIJyqVASw5NDI2NzcyNyw5NDI5MjE5NSw5NDI5OTUzMiwxMDA3OTY
+                        0OTgsMTAwNzk3NzYxLDEwMDc5NjUzNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw
+                        5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjM3QgJDUg%3D%3D&skid=f92f1829-888e-4809-9dd6-f1450158c630">Google Maps</a>
+                    </button>
+                </div>
+            </div>
+        </header>
         
         <!-- Carrusel de Imagenes-->
         <section id="carrusel">
