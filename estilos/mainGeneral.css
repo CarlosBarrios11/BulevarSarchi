@@ -1,4 +1,8 @@
-#carrusel img{
+#carrusel img:not(.noCover){
+  object-fit: cover;
+}
+
+#carrusel img {
   width: 400px;
   height: 480px;
 }
