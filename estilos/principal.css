@@ -1,3 +1,7 @@
+.logoTitulo img{
+  object-fit: cover
+}
+
 #contenedorVideo{
   position: relative;
   display: flex;
