@@ -47,3 +47,76 @@ nav a { /* para que se vea bonito el nav */
   color: #333;
   padding: 5px 10px;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.enlacesNav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ocultar el checkbox real, pero mantenerlo accesible */
+.menuCheckbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Botón hamburguesa (label), oculto en escritorio */
+.menuHamburguesaLabel {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1001;
+}
+
+.menuHamburguesaLabel span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000; /* ajustá al color de tu marca */
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Responsive: se activa el menú hamburguesa */
+@media (max-width: 768px) {
+    .menuHamburguesaLabel {
+        display: flex;
+    }
+
+    .enlacesNav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* ajustá al fondo de tu header */
+        padding: 15px 0;
+        gap: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        z-index: 1000;
+    }
+
+    /* Truco clave: mostrar el menú cuando el checkbox está marcado */
+    .menuCheckbox:checked ~ .enlacesNav {
+        display: flex;
+    }
+
+    .enlacesNav a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #eee;
+    }
+}

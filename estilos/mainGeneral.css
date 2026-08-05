@@ -7,3 +7,42 @@
   height: 480px;
 }
 
+
+/* =========================================================
+   RESPONSIVE BÁSICO
+   ========================================================= */
+ 
+@media (max-width: 800px) {
+    #tiendasComida {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    footer {
+        grid-template-columns: 1fr;
+    }
+ 
+    footer > *:nth-child(1),
+    footer > *:nth-child(2),
+    footer > *:nth-child(3),
+    footer > *:nth-child(4),
+    footer > *:nth-child(5),
+    footer > *:nth-child(6),
+    footer > *:nth-child(7),
+    footer > *:nth-child(8),
+    footer > *:nth-child(9),
+    footer > *:nth-child(10) {
+        grid-column: 1;
+        text-align: center;
+        justify-self: center;
+    }
+ 
+    footer > *:nth-child(4) a {
+        justify-content: center;
+    }
+}
+ 
+@media (max-width: 500px) {
+    #tiendasComida {
+        grid-template-columns: 1fr;
+    }
+}
