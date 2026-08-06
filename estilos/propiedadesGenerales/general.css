@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html{
@@ -13,7 +15,7 @@ body {
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 h2{
