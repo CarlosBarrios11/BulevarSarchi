@@ -1,19 +1,147 @@
-
-header img {
-  width: 125px;
-  height: 110px;
+* {
+  margin: 0;
+  padding: 0;
+  /*Evita calculos incorectos al usar width y height, ya que el valor que se use en esas características se mantiene incluso si se le agrega padding y border*/
+  box-sizing: border-box;
 }
 
-.logoTitulo {
+header {
   display: flex;
   align-items: center;
+  justify-content: space-between; /*Envi a las esquinas*/
+  padding: 0.5rem; 
+  background-color: black;
 }
 
-.titulo {
-  width: 50%;
+.logo {
+  max-width: 90px;
+  max-height: 80px;
+  height: 80px;
+  width: 90px;
+  flex-shrink: 0;
+  object-fit: contain;
+  /* max-width: 5rem; */
+}
+
+h1{
+  padding: 0 20px;
+  flex: 1;
+  /* text-align: center; */
+  margin: auto;
+  color: white;
+}
+
+.abrirMenu,
+.cerrarMenu {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrirMenu img {
+  width: 40px;
+  height: 40px;
+}
+
+.cerrarMenu img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
   display: flex;
-  margin: 0 auto;
-
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem; /*Separar el boton de cerrar de acuerdo con la li*/
+  position: absolute;
+  /*Medidas para enviar la lista al lado derecho*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  padding: 2rem;
+  /*Sombra del background cuando se abre el menu hanburguesa*/
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 }
 
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  
+}
+
+
+.navList li a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+
+
+@media screen and (min-width: 1070px) {
+
+  .abrirMenu,
+  .cerrarMenu {
+    display: none;
+  }
+
+
+
+  .nav {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    flex-direction: row;
+    background-color: grey;
+    padding: 12px 0;
+    box-shadow: none;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .navList {
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .navList li a {
+    color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  h1{
+    text-align: center;
+    flex: 1;
+    margin: auto;
+  }
+
+  .logo{
+    max-width: 120px;
+    max-height: 110px;
+    height: 110px;
+    width: 120px;
+    flex-shrink: 0;
+  }
+
+  
+
+}
 
