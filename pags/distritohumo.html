@@ -18,31 +18,30 @@
  
 <body>
     <header>
-        <div class="logoTitulo">
-            <img src="../img/distritoHumo/logo2.webp" alt="Logo Distrito Humo">
-            <div class="titulo">
-                <h1>Distrito Humo</h1>
-            </div>
-        </div>
- 
-        <div class="edicionNav">
-            <hr class="hr1">
-            <nav>
-                <a href="../index.html">Bulevar</a>
-                <a href="aurum.html">Aurum</a>
-                <a href="betosPizza.html">Beto's Pizza</a>
-                <a href="bowlo.html">Bowlo</a>
-                <a href="distritohumo.html">Distrito Humo</a>
-                <a href="hastaElElote.html">Hasta el Elote</a>
-                <a href="ironfit.html">Ironfit08</a>
-                <a href="raizTica.html">Raíz Tica Café</a>
-                <a href="robchicken.html">Robchicken</a>
-                <a href="rollArt.html">Roll Art</a>
-                <a href="yulyPeraltaSalon.html">Yuly Salón</a>
-            </nav>
-            <hr class="hr2">
-        </div>
+        <img class="logo" src="../img/distritoHumo/logo2.webp" alt="Logo Distrito Humo">
+        <h1>Distrito Humo</h1>
+        <button id="abrir" class="abrirMenu"> <img src="../img/extras/menuHamburguesa.png" alt="Menú tiendas"></button>
     </header>
+    
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrarMenu"><img src="../img/extras/cerrarMenu.png" alt="Salir menú"></button>
+        <ul class="navList">
+            <li><a href="../index.html">Bulevar</a></li>
+            <li><a href="aurum.html">Aurum</a></li>    
+            <li><a href="betosPizza.html">Beto's Pizza</a></li>
+            <li><a href="bowlo.html">Bowlo</a></li>
+            <li><a href="distritohumo.html">Distrito Humo</a></li>
+            <li><a href="hastaElElote.html">Hasta el Elote</a></li>
+            <li><a href="ironfit.html">Ironfit08</a></li>
+            <li><a href="raizTica.html">Raíz Tica Café</a></li>
+            <li><a href="robchicken.html">Robchicken</a></li>
+            <li><a href="rollArt.html">Roll Art</a></li>
+            <li><a href="yulyPeraltaSalon.html">Yuly Salón</a></li>   
+        </ul>
+    </nav>
+    
+ 
+   
  
     <main>
        
@@ -242,40 +241,42 @@
     </main>
  
     <footer>
- 
-        <section id="horario">
- 
-            <h3>Horario</h3>
-            <ul>
-                <li>Martes de 5:30pm - 8:45pm</li>
-                <li>Miércoles de 3:30pm - 9:00pm</li>
-                <li>Jueves de 12:30pm - 9:00pm</li>
-                <li>Viernes, Sábado y Domingo de 11:30am - 9:45pm</li>
-            </ul>
- 
-        </section>
-       
- 
-        <section id="contacto">  
-                <h3>Contacto</h3>
+
+        <div class="footerTop">
+            <div class="footerCol footerLogo">
+                <img src="../img/distritoHumo/logo2.webp" alt="Logo Distrito Humo">
+            </div>
+
+            <div class="footerCol footerHorario">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Martes de 5:30pm - 8:45pm</li>
+                    <li>Miércoles de 3:30pm - 9:00pm</li>
+                    <li>Jueves de 12:30pm - 9:00pm</li>
+                    <li>Viernes, Sábado y Domingo de 11:30am - 9:45pm</li>
+                </ul>
+            </div>
+            
+            <div class="footerCol footerContacto">
+                <h4>Contacto</h4>
                 <ul>
                     <li><a href="https://wa.me/50661973322"> <img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 6197-3322 </a></li>
                 </ul>
-        </section>
-         
-        <img src="../img/distritoHumo/logo2.webp" alt="Logo Distrito Humo">
- 
-        <section id="siguenos">
-            <h3>Síguenos</h3>
-            <ul>
-                <li><a href="https://vt.tiktok.com/ZSC3fLjBJ/"> <img src="../img/extras/tiktok.webp" alt="Síguenos en Tik Tok"></a></li>
-                <li><a href="https://www.instagram.com/distritohumocr?igsh=a2ltcmN5bWtvc2ky"> <img src="../img/extras/instagram.webp" alt="Síguenos en Instagram"></a></li>
-            </ul>
-        </section>
- 
+                    
+            </div>
+
+            <div class="footerCol footerSiguenos">
+                <h4>Síguenos</h4>
+                <ul class="redesSociales">
+                    <li><a href="https://vt.tiktok.com/ZSC3fLjBJ/"> <img src="../img/extras/tiktok.webp" alt="Síguenos en Tik Tok"></a></li>
+                    <li><a href="https://www.instagram.com/distritohumocr?igsh=a2ltcmN5bWtvc2ky"> <img src="../img/extras/instagram.webp" alt="Síguenos en Instagram"></a></li>
+                </ul>
+            </div>
+        
+        </div>
         <hr>
-        &copy; Bulevar Plaza Sarchí. Todos los derechos reservados.
-       
+        <p class="copyright">&copy; Bulevar Plaza Sarchí. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
