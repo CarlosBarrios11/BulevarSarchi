@@ -17,32 +17,27 @@
 
 <body>
     <header>
-        <div class="logoTitulo">
-            <img src="../img/robchicken/robchickenLogojpg.webp" alt="Robchicken Logo">
-            <div class="titulo">
-                <h1>Robchicken</h1>
-            </div> 
-        </div>
-
-        <div class="edicionNav">
-            <hr class="hr1">
-            <nav>
-                <a href="../index.html">Bulevar</a>
-                <a href="aurum.html">Aurum</a>
-                <a href="betosPizza.html">Beto's Pizza</a>
-                <a href="bowlo.html">Bowlo</a>
-                <a href="distritohumo.html">Distrito Humo</a>
-                <a href="hastaElElote.html">Hasta el Elote</a>
-                <a href="ironfit.html">Ironfit08</a>
-                <a href="raizTica.html">Raíz Tica Café</a>
-                <a href="robchicken.html">Robchicken</a>
-                <a href="rollArt.html">Roll Art</a>
-                <a href="yulyPeraltaSalon.html">Yuly Salón</a>
-            </nav>
-            <hr class="hr2">
-        </div>
-
+        <img class="logo" src="../img/robchicken/robchickenLogojpg.webp" alt="Robchicken Logo">
+        <h1>Robchicken</h1>
+        <button id="abrir" class="abrirMenu"> <img src="../img/extras/menuHamburguesa.png" alt="Menú tiendas"></button>
     </header>
+
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrarMenu"><img src="../img/extras/cerrarMenu.png" alt="Salir menú"></button>
+        <ul class="navList">
+            <li><a href="index.html">Bulevar</a></li>
+            <li><a href="pags/aurum.html">Aurum</a></li>
+            <li><a href="pags/betosPizza.html">Beto's Pizza</a></li>
+            <li><a href="pags/bowlo.html">Bowlo</a></li>
+            <li><a href="pags/distritohumo.html">Distrito Humo</a></li>
+            <li><a href="pags/hastaElElote.html">Hasta el Elote</a></li>
+            <li><a href="pags/ironfit.html">Ironfit08</a></li>
+            <li><a href="pags/raizTica.html">Raíz Tica Café</a></li>
+            <li><a href="pags/robchicken.html">Robchicken</a></li>
+            <li><a href="pags/rollArt.html">Roll Art</a></li>
+            <li><a href="pags/yulyPeraltaSalon.html">Yuly Salón</a></li>
+        </ul>
+    </nav>
 
     <main>
 
@@ -278,34 +273,38 @@
     </main>
 
     <footer>
-        <section id="horario">
-            <h4>Horario</h4>
-            
-            <ul>
-                <li>Martes a Jueves : 11am - 9pm</li>
+        <div class="footerTop">
+            <div class="footerCol footerLogo">
+                <img class="logoFooter" src="../img/robchicken/robchickenLogojpg.webp" alt="logo rob chicken">
+            </div>
+
+            <div class="footerCol footerHorario">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Martes a Jueves : 11am - 9pm</li>
                 <li>viernes a Domingo: 11am a 10pm</li>
+                </ul>
+            </div>
 
-            </ul>
-        </section>
-
-         <section id="contacto">  
+            <div class="footerCol footerContacto">
                 <h4>Contacto</h4>
                 <ul>
                     <li><a href="https://wa.me/84444542"><img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 8444 4542</a></li>
                 </ul>
-         </section>
+            </div>
 
-         <img src="../img/robchicken/robchickenLogojpg.webp" alt="Robchicken Logo">
-
-         <section id="siguenos">
-            <h4>Síguenos</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/robchicken.cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img src="../img/extras/instagram.webp" alt="instagram"></a></li>
-            </ul>
-         </section>
+            <div class="footerCol footerSiguenos">
+                <h4>Síguenos</h4>
+                <ul class="redesSociales">
+                    <li><a href="https://www.instagram.com/robchicken.cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"><img src="../img/extras/instagram.webp" alt="instagram"></a></li>
+                </ul>
+            </div>
+        </div>
 
         <hr>
-        &copy; Bulevar Plaza Sarchí. Todos los derechos reservados.
+        <p class="copyright">&copy; Bulevar Plaza Sarchí. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/main.js"></script>
+
 </body>
 </html>
