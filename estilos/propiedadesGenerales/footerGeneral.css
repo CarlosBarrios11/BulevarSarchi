@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+
+footer h4 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerTop {
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "horario"
+        "contacto"
+        "siguenos"
+        "boton";
+    justify-items: center;
+    text-align: center;
+    gap: 35px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.footerLogo    { grid-area: logo; }
+.footerHorario { grid-area: horario; }
+.footerContacto{ grid-area: contacto; }
+.footerSiguenos{ grid-area: siguenos; }
+.footerBtn     { grid-area: boton; }
+
+.logoFooter {
+    width: 200px;
+}
+
+.footerHorario ul li,
+.footerContacto ul li a {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.footerContacto ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.footerContacto img {
+    width: 22px;
+    height: 22px;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.redesSociales img {
+    width: 34px;
+    height: 34px;
+}
+
+.btnResenas {
+    background-color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnResenas a {
+    color: #fff;
+}
+
+.btnResenas:hover {
+    background-color: #555;
+}
+
+footer hr {
+    border-color: #444;
+    margin: 40px 0 15px;
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+@media (min-width: 1000px) {
+    footer {
+        padding: 60px 60px 25px;
+    }
+
+    .footerTop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "horario logo contacto"
+            "horario siguenos contacto"
+            "horario boton contacto";
+        align-items: start;
+        gap: 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .footerHorario {
+        justify-self: start;
+        text-align: center;
+    }
+
+    .footerHorario h4 {
+        text-align: center;
+    }
+
+    .footerContacto {
+        justify-self: end;
+        text-align: center;
+    }
+
+    .footerContacto h4 {
+        text-align: center;
+    }
+
+    .footerContacto ul li a {
+        justify-content: center;
+    }
+
+    .footerLogo,
+    .footerSiguenos,
+    .footerBtn {
+        justify-self: center;
+    }
+
+    .footerHorario h4,
+    .footerContacto h4,
+    .footerSiguenos h4 {
+        font-size: 1.7rem;
+    }
+
+    .footerHorario ul li,
+    .footerContacto ul li a {
+        font-size: 1.25rem;
+    }
+
+    .logoFooter {
+        width: 200px;
+    }
+
+    .redesSociales {
+        gap: 28px;
+    }
+
+    .redesSociales img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .footerContacto img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .btnResenas {
+        padding: 14px 36px;
+        font-size: 1.15rem;
+    }
+
+    footer hr {
+        margin: 45px 0 20px;
+    }
+
+    .copyright {
+        font-size: 1rem;
+    }
+}
