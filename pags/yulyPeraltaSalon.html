@@ -13,36 +13,33 @@
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/headerGeneral.css">
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/mainGeneral.css">
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/footerGeneral.css">
+   
 </head>
 
 <body>
-    <header>
-        <div class="logoTitulo">
-            <img src="../img/yuliPeraltaSalon/logo.webp" alt="Logo de Yuly Peralta Salón en Bulevar Sarchí">
-            <div class="titulo">
-                <h1>Yuly Peralta Salón</h1>
-            </div> 
-        </div>
-        
-        <div class="edicionNav">
-            <hr class="hr1">
-            <nav>
-                <a href="../index.html">Bulevar</a>
-                <a href="aurum.html">Aurum</a>
-                <a href="betosPizza.html">Beto's Pizza</a>
-                <a href="bowlo.html">Bowlo</a>
-                <a href="distritohumo.html">Distrito Humo</a>
-                <a href="hastaElElote.html">Hasta el Elote</a>
-                <a href="ironfit.html">Ironfit08</a>
-                <a href="raizTica.html">Raíz Tica Café</a>
-                <a href="robchicken.html">Robchicken</a>
-                <a href="rollArt.html">Roll Art</a>
-                <a href="yulyPeraltaSalon.html">Yuly Salón</a>
-            </nav>
-            <hr class="hr2">
-        </div>
-
+    <header>   
+        <img class="logo" src="../img/yuliPeraltaSalon/logo.webp" alt="Logo de Yuly Peralta Salón en Bulevar Sarchí">  
+        <h1>Yuly Peralta Salón</h1>
+        <button id="abrir" class="abrirMenu"> <img src="img/extras/menuHamburguesa.png" alt="Menú tiendas"></button>
     </header>
+        
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrarMenu"><img src="img/extras/cerrarMenu.png" alt="Salir menú"></button>
+        <ul class="navList">
+            <li><a href="../index.html">Bulevar</a></li>
+            <li><a href="aurum.html">Aurum</a></li>    
+            <li><a href="betosPizza.html">Beto's Pizza</a></li>
+            <li><a href="bowlo.html">Bowlo</a></li>
+            <li><a href="distritohumo.html">Distrito Humo</a></li>
+            <li><a href="hastaElElote.html">Hasta el Elote</a></li>
+            <li><a href="ironfit.html">Ironfit08</a></li>
+            <li><a href="raizTica.html">Raíz Tica Café</a></li>
+            <li><a href="robchicken.html">Robchicken</a></li>
+            <li><a href="rollArt.html">Roll Art</a></li>
+            <li><a href="yulyPeraltaSalon.html">Yuly Salón</a></li>   
+        </ul>
+    </nav>
+    
 
     <main>
 
@@ -271,5 +268,6 @@
         <hr>
         &copy; Bulevar Plaza Sarchí. Todos los derechos reservados.
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
