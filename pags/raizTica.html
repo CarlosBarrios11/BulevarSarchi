@@ -15,32 +15,29 @@
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/footerGeneral.css">
 </head>
 <body>
-      <header>
-        <div class="logoTitulo">
-            <img src="../img/raizTicaCafe/logo.webp" alt="Logo raíz tica">
-            <div class="titulo">
-                <h1>Raíz Tica Café</h1>
-            </div>
-        </div>
- 
-        <div class="edicionNav">
-            <hr class="hr1">
-            <nav>
-                <a href="../index.html">Bulevar</a>
-                <a href="aurum.html">Aurum</a>
-                <a href="betosPizza.html">Beto's Pizza</a>
-                <a href="bowlo.html">Bowlo</a>
-                <a href="distritohumo.html">Distrito Humo</a>
-                <a href="hastaElElote.html">Hasta el Elote</a>
-                <a href="ironfit.html">Ironfit08</a>
-                <a href="raizTica.html">Raíz Tica Café</a>
-                <a href="robchicken.html">Robchicken</a>
-                <a href="rollArt.html">Roll Art</a>
-                <a href="yulyPeraltaSalon.html">Yuly Salón</a>
+        <header>
+            <img class="logo" src="../img/raizTicaCafe/logo.webp" alt="logo raiz tica cafe">
+            <h1>Raíz Tica Café</h1>
+            <button id="abrir" class="abrirMenu"> <img src="../img/extras/menuHamburguesa.png" alt="Menú tiendas"></button>
+            
+        </header>
+
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrarMenu"><img src="../img/extras/cerrarMenu.png" alt="Salir menú"></button>
+                <ul class="navList">
+                    <li><a href="index.html">Bulevar</a></li>
+                    <li><a href="pags/aurum.html">Aurum</a></li>
+                    <li><a href="pags/betosPizza.html">Beto's Pizza</a></li>
+                    <li><a href="pags/bowlo.html">Bowlo</a></li>
+                    <li><a href="pags/distritohumo.html">Distrito Humo</a></li>
+                    <li><a href="pags/hastaElElote.html">Hasta el Elote</a></li>
+                    <li><a href="pags/ironfit.html">Ironfit08</a></li>
+                    <li><a href="pags/raizTica.html">Raíz Tica Café</a></li>
+                    <li><a href="pags/robchicken.html">Robchicken</a></li>
+                    <li><a href="pags/rollArt.html">Roll Art</a></li>
+                    <li><a href="pags/yulyPeraltaSalon.html">Yuly Salón</a></li>
+                </ul>
             </nav>
-            <hr class="hr2">
-        </div>
-    </header>
  
     <main>
        
@@ -621,40 +618,45 @@
     </main>
  
     <footer>
-        <section id="horario">
- 
-            <h3>Horario</h3>
-            <ul>
-                <li>Martes a Jueves: 7am - 9pm</li>
-                <li>Viernes a Domingo: 7am - 10pm</li>
-            </ul>
- 
-        </section>
-       
- 
-         
- 
-         <section id="contacto">  
-                <h3>Contacto</h3>
-                <ol>
-                    <li><a href="https://wa.me/c/50671282988"> <img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 7128 2988</a></li>
-                </ol>
-         </section>
- 
-        <img src="../img/raizTicaCafe/logo.webp" alt="">
- 
-         <section id="siguenos">
-            <h3>Síguenos</h3>
-            <ul>
-                <li><a href="https://www.instagram.com/raiztica.cafe?igsh=bHpha2d2NGN3ZGc1"> <img src="../img/extras/instagram.webp" alt="Logo Instagram"></a></li>
-                <li><a href="https://www.facebook.com/share/1QHvR2z8dH/"> <img src="../img/extras/facebook.webp" alt="Logo Facebook"></a></li>
-            </ul>
-         </section>
- 
+        <div class="footerTop">
+            <div class="footerCol footerLogo">
+                <img class="logoFooter" src="../img/raizTicaCafe/logo.webp" alt="logo bulevar general">
+            </div>
+
+            <div class="footerCol footerHorario">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Martes a Jueves: 7am - 9pm</li>
+                    <li>Viernes a Domingo: 7am - 10pm</li>
+                </ul>
+            </div>
+
+            <div class="footerCol footerContacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/c/50671282988"><img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 7128 2988</a></li>
+                </ul>
+            </div>
+
+            <div class="footerCol footerSiguenos">
+                <h4>Síguenos</h4>
+                <ul class="redesSociales">
+                    <li><a href="https://www.instagram.com/raiztica.cafe?igsh=bHpha2d2NGN3ZGc1"><img src="../img/extras/instagram.webp" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/share/1QHvR2z8dH/"><img src="../img/extras/facebook.webp" alt="facebook"></a></li>
+                </ul>
+            </div>
+
+            <div class="footerCol footerBtn">
+                <button class="btnResenas">
+                    <a href="https://www.google.com/maps/place/BULEVAR+PLAZA+SARCH%C3%8D/@10.0835213,-84.3400394,18.24z/data=!4m8!3m7!1s0x8fa0590017cca477:0xdb6ee8f1a7bd3fa8!8m2!3d10.0834457!4d-84.3393769!9m1!1b1!16s%2Fg%2F11z2hhgfhf?entry=ttu&g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D">Reseñas</a>
+                </button>
+            </div>
+        </div>
+
         <hr>
-        &copy; Bulevar Plaza Sarchí. Todos los derechos reservados.
-       
+        <p class="copyright">&copy; Bulevar Plaza Sarchí. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
  

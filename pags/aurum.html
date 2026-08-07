@@ -18,31 +18,28 @@
 
 <body>
     <header>
-        <div class="logoTitulo">
-            <img src="../img/aurum/logoAurum.webp" alt="Logo de Aurum, coctelería en Bulevar Sarchí"> 
-            <div class="titulo">
-                <h1>Aurum</h1>
-            </div>
-        </div>
-
-        <div class="edicionNav">
-            <hr class="hr1">
-            <nav>
-                <a href="../index.html">Bulevar</a>
-                <a href="aurum.html">Aurum</a>
-                <a href="betosPizza.html">Beto's Pizza</a>
-                <a href="bowlo.html">Bowlo</a>
-                <a href="distritohumo.html">Distrito Humo</a>
-                <a href="hastaElElote.html">Hasta el Elote</a>
-                <a href="ironfit.html">Ironfit08</a>
-                <a href="raizTica.html">Raíz Tica Café</a>
-                <a href="robchicken.html">Robchicken</a>
-                <a href="rollArt.html">Roll Art</a>
-                <a href="yulyPeraltaSalon.html">Yuly Salón</a>
-            </nav>
-            <hr class="hr2">
-        </div>
+            <img class="logo" src="../img/aurum/logoAurum.webp" alt="logo aurum">
+            <h1>Aurum</h1>
+            <button id="abrir" class="abrirMenu"> <img src="../img/extras/menuHamburguesa.png" alt="Menú tiendas"></button>
+            
     </header>
+
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrarMenu"><img src="../img/extras/cerrarMenu.png" alt="Salir menú"></button>
+                <ul class="navList">
+                    <li><a href="index.html">Bulevar</a></li>
+                    <li><a href="pags/aurum.html">Aurum</a></li>
+                    <li><a href="pags/betosPizza.html">Beto's Pizza</a></li>
+                    <li><a href="pags/bowlo.html">Bowlo</a></li>
+                    <li><a href="pags/distritohumo.html">Distrito Humo</a></li>
+                    <li><a href="pags/hastaElElote.html">Hasta el Elote</a></li>
+                    <li><a href="pags/ironfit.html">Ironfit08</a></li>
+                    <li><a href="pags/raizTica.html">Raíz Tica Café</a></li>
+                    <li><a href="pags/robchicken.html">Robchicken</a></li>
+                    <li><a href="pags/rollArt.html">Roll Art</a></li>
+                    <li><a href="pags/yulyPeraltaSalon.html">Yuly Salón</a></li>
+                </ul>
+            </nav>
 
     <main>
         
@@ -348,43 +345,47 @@
     </main>
 
     <footer>
+        <div class="footerTop">
+            <div class="footerCol footerLogo">
+                <img class="logoFooter" src="../img/aurum/logoAurum.webp" alt="logo bulevar general">
+            </div>
 
-        <section id="horario">
+            <div class="footerCol footerHorario">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Miércoles y Jueves de 3:00pm - 9:00pm</li>
+                    <li>Viernes de 2:00pm - 11:00pm</li>
+                    <li>Sábado de 12:00pm - 11:00pm</li>
+                    <li>Domingo de 11:00am - 10:00pm</li>
+                </ul>
+            </div>
 
-            <h4>Horario</h4>
-            <ul>
-                <li>Miércoles y Jueves de 3:00pm - 9:00pm</li>
-                <li>Viernes de 2:00pm - 11:00pm</li>
-                <li>Sábado de 12:00pm - 11:00pm</li>
-                <li>Domingo de 11:00am - 10:00pm</li>
-            </ul>
-
-        </section>
-        
-
-       
-
-        <section id="contacto">  
+            <div class="footerCol footerContacto">
                 <h4>Contacto</h4>
                 <ul>
-                    <li><a href="https://wa.me/50672613440"> <img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 7261-3440 </a></li>
+                    <li><a href="https://wa.me/50672613440"><img src="../img/extras/whatsapp.webp" alt="WhatsApp">+506 7261-3440</a></li>
                 </ul>
-        </section>
-         
-        <img src="../img/aurum/logoAurum.webp" alt="Logo Aurum"> 
+            </div>
 
-        <section id="siguenos">
-            <h4>Síguenos</h4>
-            <ul>
-                <li><a href="https://www.tiktok.com/@aurum5415?is_from_webapp=1&sender_device=pc"> <img src="../img/extras/tiktok.webp" alt="Síguenos en TikTok"></a></li>
-                <li><a href="https://www.instagram.com/cocktail_aurum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img src="../img/extras/instagram.webp" alt="Síguenos en Instagram"></a></li>
-                <li><a href="https://www.facebook.com/share/1DuMMo2e8p/?mibextid=wwXIfr"> <img src="../img/extras/facebook.webp" alt="Síguenos en Facebook"></a></li>
-            </ul>
-        </section>
+            <div class="footerCol footerSiguenos">
+                <h4>Síguenos</h4>
+                <ul class="redesSociales">
+                    <li><a href="https://www.tiktok.com/@aurum5415?is_from_webapp=1&sender_device=pc"><img src="../img/extras/tiktok.webp" alt="tiktok"></a></li>
+                    <li><a href="https://www.instagram.com/cocktail_aurum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../img/extras/instagram.webp" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/share/1DuMMo2e8p/?mibextid=wwXIfr"><img src="../img/extras/facebook.webp" alt="facebook"></a></li>
+                </ul>
+            </div>
+
+            <div class="footerCol footerBtn">
+                <button class="btnResenas">
+                    <a href="https://www.google.com/maps/place/BULEVAR+PLAZA+SARCH%C3%8D/@10.0835213,-84.3400394,18.24z/data=!4m8!3m7!1s0x8fa0590017cca477:0xdb6ee8f1a7bd3fa8!8m2!3d10.0834457!4d-84.3393769!9m1!1b1!16s%2Fg%2F11z2hhgfhf?entry=ttu&g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D">Reseñas</a>
+                </button>
+            </div>
+        </div>
 
         <hr>
-        &copy; Bulevar Plaza Sarchí. Todos los derechos reservados.
-       
+        <p class="copyright">&copy; Bulevar Plaza Sarchí. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
