@@ -74,7 +74,8 @@ h1 span{
   background-color: black;
   padding: 2rem;
   /*Sombra del background cuando se abre el menu hanburguesa*/
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  /* box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); */
+  z-index: 30;
 }
 
 .nav.visible {
@@ -98,7 +99,31 @@ h1 span{
   
 }
 
+/* Enmáscarado oscuro de la pantalla cuando se abre el menú hamburguesa */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Va abarcar todo el ancho y alto de la pantalla*/
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20; /* Justo debajo del menú hamburguesa (que tiene z-index: 30) */
+  opacity: 0;
+  visibility: hidden;
+}
 
+/*Clase que se utiliza para activar el */
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* No permite el uso del scroll para cuando se abre el menú hamburguesa */
+.bodyNoScroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
 
 
 @media screen and (min-width: 1105px) {
@@ -108,7 +133,9 @@ h1 span{
     display: none;
   }
 
-
+  .overlay{
+    display: none;
+  }
 
   .nav {
     opacity: 1;
