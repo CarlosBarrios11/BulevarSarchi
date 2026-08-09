@@ -24,7 +24,6 @@
   object-fit:cover;
   display:block;
   position: relative;
-  z-index: 20; /* la imagen nítida siempre arriba */
 }
 
 
@@ -38,7 +37,7 @@
   background-position: center;
   filter: blur(15px);
   transform: scale(1.15); /* evita bordes claros por el blur */
-  z-index: 1;
+  z-index: 0;
 }
 
 .carruselBoton img {
@@ -58,7 +57,6 @@
   cursor: pointer;
   font-size: 18px;
   transition: background .3s;
-  z-index: 8;
 }
 
 
@@ -68,12 +66,10 @@
 
 .carruselBotonPrev{
   left: 10px;
-  z-index: 20;
 }
 
 .carruselBotonNext {
   right: 10px;
-  z-index: 20;
 }
 
 /*Puntos de desplazamiento*/
@@ -85,7 +81,6 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  z-index: 20; /*Mantiene el */
 }
 
 .indicator{
@@ -108,11 +103,6 @@
     
   }
 
-  .carruselItem {
-    z-index: 5;
-  }
-
-
   .carruselItem img {
     width: 100%;
     height: 700px;
@@ -120,10 +110,9 @@
   }
 
   .fondoBorroso {
-    background-image: url(img/raizTicaCafe/carrusel5.webp);
+    background-image: url();
     filter: blur(10px);
     /*La profundidad va a ser baja y siempre va estar por debajo todos los elementos del carrusel (botones flecha, puntos de índice y la img que va a ir arriba)*/
-    z-index: 1; 
   }
   
 }
