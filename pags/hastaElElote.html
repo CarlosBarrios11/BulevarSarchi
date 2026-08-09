@@ -45,23 +45,74 @@
  
     <main>
        
-        <section id="carrusel">
-     
-            <h2>Platillos</h2>
- 
-            <!-- Carrusel de Imagenes-->
-             <a href="#elote"><img src="../img/hastaElElote/elotesMexicanos.webp" alt="Elote mexicano, Hasta el Elote en Bulevar Sarchí"></a>
-             <a href="#pastor"><img src="../img/hastaElElote/tacosAlPastor.webp" alt="Tacos al pastor, Hasta el Elote, con piña y salsa especial"></a>
-             <a href="#quesobirria"><img src="../img/hastaElElote/quesoBirria.webp" alt="Tacos de birria, Hasta el Elote en Bulevar Plaza Sarchí"></a>
-             <a href="#nachos"><img src="../img/hastaElElote/platillo.webp" alt="Platillo, hasta el elote en Bulevar Plaza Sarchí"></a>
-             <a href="#azteca"><img src="../img/hastaElElote/sopaAzteca.webp" alt="Sopa azteca de Hasta el Elote, con pollo y aguacate"></a>
-             <a href="#flautas"><img src="../img/hastaElElote/flautas.webp" alt="Flautas, Hasta el Elote en Bulevar Sarchí"></a>
-             <a href="#mangonada"><img src="../img/hastaElElote/jugo.webp" alt="Jugo mangonada, Hasta el Elote en Bulevar Sarchí"></a>
-           
-            <hr>
- 
-        </section>
- 
+       <!-- Carrusel de Imagenes-->
+    <section id="seccionCarrusel">
+        <h2>Platillos</h2>
+
+        <div class="carruselContainer">
+            <div class="carrusel" id="carrusel">
+                <div class="carruselItem">
+                    <a href="#elote">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/elotesMexicanos.webp" alt="Elote mexicano, Hasta el Elote en Bulevar Sarchí">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#pastor">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/tacosAlPastor.webp" alt="Tacos al pastor, Hasta el Elote, con piña y salsa especial">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#quesobirria">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/quesoBirria.webp" alt="Tacos de birria, Hasta el Elote en Bulevar Plaza Sarchí">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#nachos">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/platillo.webp" alt="Platillo, hasta el elote en Bulevar Plaza Sarchí">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#azteca">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/sopaAzteca.webp" alt="Sopa azteca de Hasta el Elote, con pollo y aguacate">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#flautas">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/flautas.webp" alt="Flautas, Hasta el Elote en Bulevar Sarchí">
+                    </a>
+                </div>
+
+                <div class="carruselItem">
+                    <a href="#mangonada">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/hastaElElote/jugo.webp" alt="Jugo mangonada, Hasta el Elote en Bulevar Sarchí">
+                    </a>
+                </div>
+            </div>
+
+            <button class="carruselBoton carruselBotonPrev" id="prevBtn">
+                <img src="../img/extras/flechaIzquierda.png" alt="Desplazar imagen a la izquierda">
+            </button>
+            <button class="carruselBoton carruselBotonNext" id="nextBtn">
+                <img src="../img/extras/flechaDerecha.png" alt="Desplazar imagen a la derecha">
+            </button>
+        
+            <div class="contentIndicators" id="indicators"></div>
+        
+        </div>
+
+    </section>
         <section class="menu">
  
             <h2>Menú</h2>

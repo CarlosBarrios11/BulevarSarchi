@@ -45,18 +45,68 @@
 
     <main>
 
-        <section id="carrusel">
-            <h2>Pizzas y Calzones</h2>
+        <!-- Carrusel de Imagenes-->
+    <section id="seccionCarrusel">
+        <h2>Pizzas y Calzones</h2>
 
-            <!--6 imagenes por carrucel-->
-            <a href="#pizza-hawaiana"><img src="../img/betosPizza/pizzaHawaiana.webp" alt="Pizza Hawaiana"></a>
-            <a href="#pizza-jamon-hongos"><img src="../img/betosPizza/pizzaJamonHongos.webp" alt="Pizza Jamón y Hongos"></a>
-            <a href="#pizza-pepperoni"><img src="../img/betosPizza/pizzaPepperoni.webp" alt="Pizza de Pepperoni"></a>
-            <a href="pizza-suprema"><img src="../img/betosPizza/pizzaSuprema.webp" alt="Pizza Suprema"></a>
-            <img src="" alt="5">
-            <img src="" alt="6">
-                    
-        </section>
+        <div class="carruselContainer">
+            <div class="carrusel" id="carrusel">
+                <div class="carruselItem">
+                    <a href="#pizza-hawaiana">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/betosPizza/pizzaHawaiana.webp" alt="Pizza Hawaiana">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#pizza-jamon-hongos">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/betosPizza/pizzaJamonHongos.webp" alt="Pizza Jamón y Hongos">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#pizza-pepperoni">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/betosPizza/pizzaPepperoni.webp" alt="Pizza de Pepperoni">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#pizza-suprema">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/betosPizza/pizzaSuprema.webp" alt="Pizza Suprema">
+                    </a>
+                </div>
+            
+                <!--
+                <div class="carruselItem">
+                    <a href="#pizza-5">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="" alt="5">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#pizza-6">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="" alt="6">
+                    </a>
+                </div> -->
+            </div>
+
+            <button class="carruselBoton carruselBotonPrev" id="prevBtn">
+                <img src="../img/extras/flechaIzquierda.png" alt="Desplazar imagen a la izquierda">
+            </button>
+            <button class="carruselBoton carruselBotonNext" id="nextBtn">
+                <img src="../img/extras/flechaDerecha.png" alt="Desplazar imagen a la derecha">
+            </button>
+        
+            <div class="contentIndicators" id="indicators"></div>
+        
+        </div>
+
+    </section>
 
         <section id="menu-betos-pizza">
 

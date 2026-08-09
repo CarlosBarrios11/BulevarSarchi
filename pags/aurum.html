@@ -46,16 +46,67 @@
 
     <main>
         
-        <section id="carrusel">
-            <h2>Nuestras bebidas</h2>
+        <!-- Carrusel de Imagenes-->
+    <section id="seccionCarrusel">
+        <h2>Nuestras bebidas</h2>
 
-            <!-- Carrusel de Imagenes-->
-            <a href="#mojito-clasico"><img src="../img/aurum/blueMojito.webp" alt="Blue Mojito de Aurum, con hierba buena y frutos rojos"></a>
-            <a href="#"><img src="../img/aurum/cantaritos.webp" alt="Cantaritos de Aurum, bebida tradicional mexicana"></a>
-            <a href="#"><img src="../img/aurum/cerveza.webp" alt="Cerveza en Aurum"></a>
-            <a href="#"><img src="../img/aurum/aperol.webp" alt="Aperol Spritz de Aurum, refrescante y amargo"></a>
+        <div class="carruselContainer">
+            <div class="carrusel" id="carrusel">
+                <div class="carruselItem">
+                    <a href="#mojito-clasico">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/aurum/blueMojito.webp" alt="Blue Mojito de Aurum, con hierba buena y frutos rojos">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#cantaritos">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/aurum/cantaritos.webp" alt="Cantaritos de Aurum, bebida tradicional mexicana">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#cerveza">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/aurum/cerveza.webp" alt="Cerveza en Aurum">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#aperol">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/aurum/aperol.webp" alt="Aperol Spritz de Aurum, refrescante y amargo">
+                    </a>
+                </div>
 
-        </section>
+                <!--<div class="carruselItem">
+                    <a href="#bebida-5">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="" alt="Bebida 5">
+                    </a>
+                </div>
+            
+                <div class="carruselItem">
+                    <a href="#bebida-6">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="" alt="Bebida 6">
+                    </a>
+                </div> -->
+            </div>
+
+            <button class="carruselBoton carruselBotonPrev" id="prevBtn">
+                <img src="../img/extras/flechaIzquierda.png" alt="Desplazar imagen a la izquierda">
+            </button>
+            <button class="carruselBoton carruselBotonNext" id="nextBtn">
+                <img src="../img/extras/flechaDerecha.png" alt="Desplazar imagen a la derecha">
+            </button>
+        
+            <div class="contentIndicators" id="indicators"></div>
+        
+        </div>
+
+    </section>
 
         <section class="menu">
  
