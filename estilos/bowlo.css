@@ -1,3 +1,12 @@
-.logoTitulo img{
-  object-fit: cover
+header, footer{
+  background-color: #40503F;
 }
+
+.nav{
+  background-color: #364335;
+}
+
+.nav li a{
+  color: white;
+}
+
