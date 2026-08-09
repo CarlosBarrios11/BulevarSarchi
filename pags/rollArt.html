@@ -44,21 +44,64 @@
 
     <main>
         
-        <section id="carrusel">
-
+        <!-- Carrusel de Imagenes-->
+        <section id="seccionCarrusel">
             <h2>Platillos</h2>
 
-            <!-- Carrusel de Imagenes-->
-             <a href="#spicy"><img src="../img/rollArt/tunaSpicy.webp" alt=""></a>
-             <a href="#sushi"><img src="../img/rollArt/comboSushi.webp" alt="10 Fresh Roll + 10 Spicy Tuna + 10 Pink Roll + 3 Nigiris Salmon"></a>
-             <a href="#sushi"><img src="../img/rollArt/combo2Sushi.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso"></a>
-             <a href="#sushi"><img src="../img/rollArt/combo3Sushi.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso"></a>
-             <a href="#entradas"><img src="../img/rollArt/tunaBites.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso"></a>
-             <a href="#sweet"><img src="../img/rollArt/sweetRoll.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso"></a>
-            
-            <hr>
+            <div class="carruselContainer">
+                <div class="carrusel" id="carrusel">
+                    <div class="carruselItem">
+                        <a href="#spicy">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/tunaSpicy.webp" alt="Entraditas de sushi Roll tost">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#sushi">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/comboSushi.webp" alt="10 Fresh Roll + 10 Spicy Tuna + 10 Pink Roll + 3 Nigiris Salmon">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#sushi">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/combo2Sushi.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#sushi">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/combo3Sushi.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#entradas">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/tunaBites.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#sweet">
+                        <div class="fondoBorroso"></div>
+                        <img src="../img/rollArt/sweetRoll.webp" alt="10 Explosion Tempura, 10 Philadelphia Tempura, 10 Hosomaki Salmon, 4 dedos de queso">
+                        </a>
+                    </div>
+                </div>
 
+                <button class="carruselBoton carruselBotonPrev" id="prevBtn"><img src="../img/extras/flechaIzquierda.png" alt="Desplazar imagen a la izquierda"></button>
+                <button class="carruselBoton carruselBotonNext" id="nextBtn"><img src="../img/extras/flechaDerecha.png" alt="Desplazar imagen a la derecha"></button>
+            
+                <div class="contentIndicators" id="indicators"></div>
+            
+            
+            </div>
         </section>
+
 
         <section class="menu">
  

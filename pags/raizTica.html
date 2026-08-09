@@ -44,21 +44,69 @@
  
     <main>
        
-        <section id="carrusel">
-     
+        <!-- Carrusel de Imagenes-->
+        <section id="seccionCarrusel">
             <h2>Platillos</h2>
- 
-            <!-- Carrusel de Imagenes-->
-             <a href="#pastaCamaron"><img class="noCover" src="../img/raizTicaCafe/carrusel1.webp" alt="Pasta"></a>
-             <a href="#cevichePescado"><img class="noCover" src="../img/raizTicaCafe/carrusel2.webp" alt="Foto carrusel 2"></a>
-             <a href="#clasico"><img class="noCover" src="../img/raizTicaCafe/carrusel3.webp" alt="Foto carrusel 3"></a>
-             <a href="#reposteria"><img class="noCover" src="../img/raizTicaCafe/carrusel4.webp" alt="Foto carrusel 4"></a>
-             <a href="#carneMechada"><img class="noCover" src="../img/raizTicaCafe/carrusel5.webp" alt="Foto carrusel 5"></a>
-             <a href="#cafeNegro"><img class="noCover" src="../img/raizTicaCafe/carrusel6.webp" alt="Foto carrusel 6"></a>
-           
+
+            <div class="carruselContainer">
+                <div class="carrusel" id="carrusel">
+                    <div class="carruselItem">
+                        <a href="#pastaCamaron">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel1.webp" alt="Pasta blanca con camarones">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#cevichePescado">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel2.webp" alt="Ceviche">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#clasico">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel3.webp" alt="Desayuno tipico">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#reposteria">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel4.webp" alt="Repostería arrollado"></a>
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#carneMechad">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel5.webp" alt="Desayuno con Carne Mechada">
+                        </a>
+                    </div>
+                
+                    <div class="carruselItem">
+                        <a href="#cafeNegro">
+                        <div class="fondoBorroso"></div>
+                        <img class="noCover" src="../img/raizTicaCafe/carrusel6.webp" alt="Café Negro">
+                        </a>
+                    </div>
+                </div>
+
+                <button class="carruselBoton carruselBotonPrev" id="prevBtn"><img src="../img/extras/flechaIzquierda.png" alt="Desplazar imagen a la izquierda"></button>
+                <button class="carruselBoton carruselBotonNext" id="nextBtn"><img src="../img/extras/flechaDerecha.png" alt="Desplazar imagen a la derecha"></button>
+            
+                <div class="contentIndicators" id="indicators"></div>
+            
+            </div>
+
         </section>
+
+
+
+
  
-         <section class="menu">
+        <section class="menu">
    
             <h2>Menú</h2>
  
