@@ -85,6 +85,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  z-index: 20; /*Mantiene el */
 }
 
 .indicator{
@@ -121,7 +122,8 @@
   .fondoBorroso {
     background-image: url(img/raizTicaCafe/carrusel5.webp);
     filter: blur(10px);
-    z-index: 1;
+    /*La profundidad va a ser baja y siempre va estar por debajo todos los elementos del carrusel (botones flecha, puntos de índice y la img que va a ir arriba)*/
+    z-index: 1; 
   }
   
 }
