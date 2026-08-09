@@ -1,7 +1,30 @@
-header img {
-    object-fit:contain;
+header{
+    background-color: #fff;
 }
 
-#carrusel img {
-    object-fit: cover;
+footer{
+    background-color: #fff;
+    color: black;
+}
+
+footer a{
+    color: black;
+}
+
+h1{
+    color: black;
+}
+
+/* Convierte la imagen del botón hamburguesa de blanco a negro */
+.abrirMenu img,
+.cerrarMenu img {
+  filter: invert(1);
+}
+
+.nav {
+  background-color: white;
+}
+
+.navList li a {
+  color: black;
 }
