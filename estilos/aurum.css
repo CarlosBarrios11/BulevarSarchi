@@ -1,6 +1,6 @@
 
 body {
-    background-color: black;
+    background-color: #010101;
 }
 
 .platillo:hover{
@@ -11,5 +11,9 @@ body {
 /*Tamaño del título para cada producto*/
 .nombreDescripcion h4 {
     font-size: 19px;
+}
+
+#nav{
+    background-color: #B8860B;
 }
 

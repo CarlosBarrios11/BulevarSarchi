@@ -9,7 +9,9 @@
 
 #irinfitColor{
   color: #ad9508;
+  display: inline;
 }
+
 
 #carruselIronFit img{
     width: 380px;

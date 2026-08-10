@@ -4,6 +4,7 @@
 }
 
 
+
 #contenedorVideo {
     position: relative;
     width: 800px;
@@ -32,7 +33,7 @@
 
 #botonMaps a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: 1px;
     border-radius: 10px;
     background-color: #ffffff7d;
@@ -124,7 +125,7 @@ main h2 {
 }
 
 body{
-    background-color: #eeeeee83;
+    background-color: #f7f4ee;
 }
 
 @media (min-width: 1000px) {
@@ -136,6 +137,10 @@ body{
     #tiendasGenerales {
         grid-template-columns: repeat(2, minmax(0, 300px));
         gap: 2rem;
+    }
+
+    #botonMaps a{
+    font-size: 2rem;
     }
 }
 
