@@ -102,7 +102,23 @@ document.querySelectorAll(".carruselItem").forEach(item => {
     }
 });
 
+// Copiado y adaptado para las fotos en yulyPeralta
+document.querySelectorAll(".servicioFilaImagen").forEach(item => {
+    const img = item.querySelector("img");
+    const fondo = item.querySelector(".fondoBorroso");
+    if (img && fondo) {
+        fondo.style.backgroundImage = `url(${img.src})`;
+    }
+});
 
+// Copiado y adaptado para las fotos en ironFit
+document.querySelectorAll(".carruselItem, .servicioFilaImagen, .informacionImagen").forEach(item => {
+    const img = item.querySelector("img");
+    const fondo = item.querySelector(".fondoBorroso");
+    if (img && fondo) {
+        fondo.style.backgroundImage = `url(${img.src})`;
+    }
+});
 
 
 })();

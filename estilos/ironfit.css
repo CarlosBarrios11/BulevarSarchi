@@ -2,3 +2,162 @@
     width: 380px;
     height: 470px;
 }
+
+body {
+    background-color: #F5F4F1;
+}
+
+
+.informacion {
+  padding: 3.5rem 6vw 4rem;
+  color: #1C1C1C;
+}
+
+.informacion h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1C1C1C;
+  margin: 0 0 2.4rem;
+}
+
+.informacion h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.9rem auto 0;
+  background-color: #FFD700;
+}
+
+/* Listado de bloques */
+
+.informacionLista {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.informacionBloque {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #FFD700;
+}
+
+.informacionBloque:last-child {
+  border-bottom: none;
+}
+
+/* Imagen con fondo borroso */
+
+.informacionImagen {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1C1C1C;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.informacionImagen:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.informacionImagen .fondoBorroso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px) brightness(0.7);
+  transform: scale(1.15);
+}
+
+.informacionImagen img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform: scale(1.30);
+}
+
+.informacionTexto {
+  width: 100%;
+  text-align: center;
+}
+
+.informacionEtiqueta {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ad9508;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.informacionTexto p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #43494D;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media (min-width: 1000px) {
+
+  .informacion {
+    padding: 5.5rem 6vw 6.5rem;
+  }
+
+  .informacion h2 {
+    font-size: 2.8rem;
+  }
+
+  .informacionBloque {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 3rem 0;
+  }
+
+  .informacionBloque:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .informacionImagen {
+    flex: 0 0 45%;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    height: auto;
+  }
+
+  .informacionEtiqueta {
+    font-size: 0.8rem;
+  }
+
+  .informacionTexto {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .informacionTexto p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: center;
+  }
+}
