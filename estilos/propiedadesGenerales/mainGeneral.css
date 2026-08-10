@@ -87,7 +87,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.551);
   cursor: pointer;
   transition: background .3s;
 }
@@ -117,3 +117,69 @@
   
 }
 
+
+/*Hero*/
+.fotoTitulo{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.titulo{
+  position: absolute;
+  color: brown;
+  bottom: 20px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+/*Grid del menú de las tiendas de comida*/
+
+/*Conjunto de artículos, que corresponde al conjunto de cards*/
+.categorias {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 1rem; 
+    padding: 1rem;
+    
+}
+
+/*Card*/
+.platillo {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px); /* Desenfoque de fondo */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    text-align: start;
+    display: grid; /*Activar segundo grid para establece dos columnas en el contenido del card*/
+    grid-template-columns: 87% 13%;
+    align-items: center; /*Centrar el contendido del card e height*/
+    height: 7rem;
+}
+
+
+/*Tamaño de la letra para la descripción del producto*/
+p {
+  font-size: 12px;
+}
+
+/*Tamaño de la letra para el precio del producto*/
+.precio p{
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 910px){
+
+    .categorias {
+      /*Se vuelven 2 columnas*/
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 40px;
+        margin: 0 auto;
+        width: 80%;
+        padding: 1rem 2rem;
+    }
+
+
+}
