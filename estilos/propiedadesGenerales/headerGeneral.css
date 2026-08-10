@@ -35,7 +35,6 @@ h1{
   grid-column: 2;  /*Columna central (exactamente en el medio)*/
   text-align: center;
   color: white;
-  font-size: 1.5rem;
 }
 /* se creó el h1 span para desplazar los titulos largos hacia abajo así quedan bonitos*/
 h1 span{
@@ -79,16 +78,18 @@ h1 span{
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
-  padding: 2rem;
+  background-color: #7a3c1c;
+  padding: 3rem;
   /*Sombra del background cuando se abre el menu hanburguesa*/
   /* box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); */
   z-index: 30;
+  
 }
 
 .nav.visible {
   opacity: 1;
   visibility: visible;
+  
 }
 
 .navList {
@@ -96,16 +97,39 @@ h1 span{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 1.5rem;
   
 }
+
+
 
 
 .navList li a {
   text-decoration: none;
   color: white;
-  
+  padding: 3px;
+  border-bottom: white;
 }
+
+.nav li a{
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*Diseño de borde para los nav en el menú hamburguesa*/
+.nav.visible .navList li {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem;
+  width: 100%;
+  text-align: right;
+}
+
+/*Quitar el último diseño del nav para el menú hamburguesa*/
+.nav.visible .navList li:last-child {
+  border-bottom: none;
+}
+
+
 
 /* Enmáscarado oscuro de la pantalla cuando se abre el menú hamburguesa */
 .overlay {
@@ -134,7 +158,8 @@ h1 span{
 }
 
 
-@media screen and (min-width: 1105px) {
+
+@media screen and (min-width: 1565px) {
 
 
   .header {
@@ -157,7 +182,7 @@ h1 span{
     visibility: visible;
     position: static;
     flex-direction: row;
-    background-color: grey;
+    background-color: #7a3c1c;
     padding: 12px 0;
     box-shadow: none;
     justify-content: center;
@@ -170,8 +195,15 @@ h1 span{
     
   }
 
+  /*Quitar diseño de borde inferior para el nav en escritorio*/
+   .nav.visible .navList li {
+    border-bottom: none;
+    padding-bottom: 0;
+    width: auto;
+  }
+
   .navList li a {
-    color: black;
+    color: white;
     height: 100%;
     width: 100%;
     display: flex;
@@ -180,7 +212,7 @@ h1 span{
   }
 
   h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   /* se restablece la disposición del texto para mantenerlo en un línea */

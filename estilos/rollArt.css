@@ -1,5 +1,5 @@
 header{
-    background-color: #fff;
+    background-color: #F0A096;
 }
 
 footer{
@@ -22,9 +22,17 @@ h1{
 }
 
 .nav {
-  background-color: white;
+  background-color: #F0A096;
 }
 
 .navList li a {
   color: black;
+}
+
+#nav{
+  background-color: #d5877d;
+}
+
+footer{
+  background-color: #F0A096;
 }

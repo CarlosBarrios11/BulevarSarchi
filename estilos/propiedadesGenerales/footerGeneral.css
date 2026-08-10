@@ -102,14 +102,18 @@ footer a:hover {
     padding: 10px 24px;
     cursor: pointer;
     font-size: 1rem;
+    
 }
  
 .btnResenas a {
     color: #fff;
+    
 }
  
 .btnResenas:hover {
-    background-color: #555;
+    background-color: #7a3c1c;
+    transform: scale(1.2);
+    list-style: none;
 }
  
 footer hr {
@@ -167,6 +171,7 @@ footer hr {
     .footerSiguenos,
     .footerBtn {
         justify-self: center;
+        
     }
  
     .footerHorario h4,
@@ -196,12 +201,17 @@ footer hr {
     .footerContacto img {
         width: 26px;
         height: 26px;
+        
     }
  
     .btnResenas {
+        background-color: #7a3c1c;
         padding: 14px 36px;
         font-size: 1.15rem;
+        
     }
+
+   
  
     footer hr {
         margin: 45px 0 20px;
