@@ -28,3 +28,11 @@ h1{
 .navList li a {
   color: black;
 }
+
+#nav{
+  background-color: #F0A7A0;
+}
+
+footer{
+  background-color: #F0A7A0;
+}

@@ -1,3 +1,16 @@
+#nav{
+  background-color: #a6a223;
+  
+}
+
+.nav li a{
+  color: black;
+}
+
+#irinfitColor{
+  color: #ad9508;
+}
+
 #carruselIronFit img{
     width: 380px;
     height: 470px;
