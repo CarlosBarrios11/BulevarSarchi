@@ -79,7 +79,7 @@ h1 span{
   right: 0;
   bottom: 0;
   background-color: #7a3c1c;
-  padding: 3rem;
+  padding: 2rem;
   /*Sombra del background cuando se abre el menu hanburguesa*/
   /* box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); */
   z-index: 30;
@@ -107,13 +107,13 @@ h1 span{
 .navList li a {
   text-decoration: none;
   color: white;
-  padding: 3px;
+  padding: 2px;
   border-bottom: white;
 }
 
 .nav li a{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /*Diseño de borde para los nav en el menú hamburguesa*/
@@ -159,7 +159,9 @@ h1 span{
 
 
 
-@media screen and (min-width: 1565px) {
+
+
+@media screen and (min-width: 1400px) {
 
 
   .header {
