@@ -96,6 +96,21 @@
   background-color: white;
 }
 
+.fotoTitulo img {
+  object-fit: cover;
+  height: 150px;
+  width: 90%;
+  border-radius: 8px;
+}
+
+/*Opacidad de la imagen de las secciones*/
+.fotoTitulo img{
+  background-color: rgb(0, 0, 0);
+  opacity: 400;
+  filter:brightness(70%);
+  z-index: 30;
+}
+
 @media (min-width: 560px) {
   .carruselBoton img {
     width: 60px;
@@ -117,7 +132,7 @@
   
 }
 
-
+/*Opciones de modificación para encabezado de cada sección*/
 /*Hero*/
 .fotoTitulo{
   display: flex;
@@ -133,8 +148,9 @@
   transform: translateX(-50%);
 }
 
-/*Grid del menú de las tiendas de comida*/
 
+/*Opciones de modificación para las cartas de cada producto (INDIVIDUAL)*/
+/*Grid del menú de las tiendas de comida*/
 /*Conjunto de artículos, que corresponde al conjunto de cards*/
 .categorias {
     display: grid;
@@ -159,19 +175,58 @@
 }
 
 
-/*Tamaño de la letra para la descripción del producto*/
-p {
-  font-size: 12px;
-}
 
-/*Tamaño de la letra para el precio del producto*/
-.precio p{
-    font-size: 1rem;
-}
+/*Opciones de modificación para las listas de productos*/
+  .listas {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 1rem; 
+    padding: 1rem;
+  }
+  
+  .tituloLista {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px); /* Desenfoque de fondo */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    text-align: start;
+    height: 13rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tituloProducto {
+    text-align: center;
+    padding: 0.5rem 0;
+    
+  }
+
+  
+
+  .listas ul li {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Tamaño de la letra para la descripción del producto*/
+  p {
+    font-size: 12px;
+  }
+
+  /*Tamaño de la letra para el precio del producto*/
+  .precio p{
+      font-size: 1rem;
+  }
+
+  /*Borde redondeado de las */
+  
+
 
 
 @media screen and (min-width: 910px){
 
+  /*Contenedor de las fichas*/
     .categorias {
       /*Se vuelven 2 columnas*/
         grid-template-columns: repeat(2, 1fr);
@@ -181,46 +236,24 @@ p {
         padding: 1rem 2rem;
     }
 
+    /*Carta larga y centrada como excepción de cuando hay secciones que tienen una fila con una sola columna
+    como en id="mojito-flor-de-cana" de aurum*/
     .platillo.centradaDesktop {
-      grid-column: 1/-1; /* Ocupa toda la fila */
-      justify-self: center; /* Centra horizontalmente */
-      margin: 0 auto;
-      width: 50%;
-      
-    }
+    grid-column: 1/-1; /* Ocupa toda la fila, le quita el formato 2 columnas*/
+    justify-self: start; 
+    margin: 0 auto;
+    width: 50%;
+  }
 
-    .listas {
-      display: grid;
-      grid-template-columns: 1fr; /* Una sola columna */
-      gap: 1rem; 
-      padding: 1rem;
-    }
-    
-    .tituloLista {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(4px); /* Desenfoque de fondo */
-      padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid #e9ecef;
-      text-align: start;
-      height: 13rem;
-      width: 50%;
-      margin: 0 auto;
-    }
-
-    .tituloProducto {
-      text-align: center;
-      padding: 0.5rem 0;
-      
-    }
-
-    
-
-    .listas ul li {
-      display: flex;
-      justify-content: center;
-    }
+  .tituloLista{
+    width: 37%;
+  }
 
 
+  /*Dimensiones del hero en desktop*/
+  .fotoTitulo img {
+    width: 1275px;
+    height: 250px;
+  }
 
 }

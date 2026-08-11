@@ -8,6 +8,11 @@ body {
     transform: translateY(-1px);
 }
 
+.tituloLista:hover{
+    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+    transform: translateY(-1px);
+}
+
 /*Tamaño del título para cada producto*/
 .nombreDescripcion h4 {
     font-size: 19px;
@@ -17,7 +22,4 @@ body {
     background-color: #B8860B;
 }
 
-img {
-    width: 1275px;
-    height: 250px;
-}
+
