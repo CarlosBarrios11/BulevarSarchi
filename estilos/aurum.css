@@ -1,6 +1,6 @@
 
 body {
-    background-color: #010101;
+    background-color: #fdfcfc;
 }
 
 .platillo:hover{
@@ -17,3 +17,7 @@ body {
     background-color: #B8860B;
 }
 
+img {
+    width: 1275px;
+    height: 250px;
+}

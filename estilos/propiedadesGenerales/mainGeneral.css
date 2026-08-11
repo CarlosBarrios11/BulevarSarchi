@@ -152,7 +152,7 @@
     border-radius: 8px;
     border: 1px solid #e9ecef;
     text-align: start;
-    display: grid; /*Activar segundo grid para establece dos columnas en el contenido del card*/
+    display: grid; /*Activar segundo grid para establecer dos columnas en el contenido del card*/
     grid-template-columns: 87% 13%;
     align-items: center; /*Centrar el contendido del card e height*/
     height: 7rem;
@@ -180,6 +180,47 @@ p {
         width: 80%;
         padding: 1rem 2rem;
     }
+
+    .platillo.centradaDesktop {
+      grid-column: 1/-1; /* Ocupa toda la fila */
+      justify-self: center; /* Centra horizontalmente */
+      margin: 0 auto;
+      width: 50%;
+      
+    }
+
+    .listas {
+      display: grid;
+      grid-template-columns: 1fr; /* Una sola columna */
+      gap: 1rem; 
+      padding: 1rem;
+    }
+    
+    .tituloLista {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px); /* Desenfoque de fondo */
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+      text-align: start;
+      height: 13rem;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .tituloProducto {
+      text-align: center;
+      padding: 0.5rem 0;
+      
+    }
+
+    
+
+    .listas ul li {
+      display: flex;
+      justify-content: center;
+    }
+
 
 
 }
