@@ -1,3 +1,33 @@
 #nav{
     background-color: rgb(116, 2, 2);
 }
+
+.platillo:hover{
+    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+.tituloLista:hover {
+    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+/*Altura del contenedor de la lista de productos, para adaptarla a beto's pizza*/
+.tituloLista{
+    height: 16rem;
+}
+
+/*Ancho distinto del general para las fichas en 1 sola columna (a diferencia de aurum de 2 columnas)*/
+@media screen and (min-width: 910px){
+.categorias{
+    width: 68%;
+}
+#foccacia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foccacia .nombreDescripcion {
+    align-items: center;
+}
+}
