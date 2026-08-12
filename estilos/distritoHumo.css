@@ -2,3 +2,54 @@
     object-fit: cover;
 }
 
+
+.platillo:hover{
+    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+
+.tituloLista:hover{
+    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+#spanPrecio {
+    display: inline;
+    font-weight: normal;
+}
+
+
+#precioSecundario{
+    font-weight: bold;
+}
+
+.tituloLista li {
+    font-size: 12px;
+}
+
+.tituloLista{
+        height: 15rem;
+    }
+
+#precioBebidas {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 910px) {
+    #salsasCuadro {
+    width: 20%;
+    height: 11rem;
+    background-color:grey;
+    }
+
+    
+    #grenuda, #famosa{
+        height: 8rem;
+        width: 60%;
+    }
+
+
+}

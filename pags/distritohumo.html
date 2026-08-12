@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/headerGeneral.css">
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/mainGeneral.css">
     <link rel="stylesheet" href="../estilos/propiedadesGenerales/footerGeneral.css">
-
+    <link rel="stylesheet" href="../estilos/distritoHumo.css">
 </head>
  
 <body>
@@ -113,78 +113,88 @@
                
  
             <section id="burgers">
- 
-                <img src="../img/distritoHumo/burger.webp" alt="foto burgers">
- 
-                <h3>Burgers</h3>
-                <p><em>Acompañada con Papas</em></p>  
- 
-                <article id= "smash">
- 
-                     <h4>La Smash</h4>
- 
-                    <p>Pan brioche artesanal con torta Angus smash, queso cheddar derretido, tocineta crujiente,
-                    pepinillos, tomate fresco, salsa chipotle y salsa de la casa</p>
- 
-                    <p class="precio">₡5.500</p>
- 
-                </article>
- 
-                <article id= "distrito">
- 
-                    <h4>La Distrito</h4>
- 
-                    <p>Pan brioche artesanal con doble torta Angus smash, queso cheddar, queso pepper jack, tocineta crujiente,
-                    pepinillos y salsa de la casa</p>
- 
-                    <p class="precio">₡6.500</p>
- 
-                </article>
- 
-                <article id= "capital">
- 
-                    <h4>La Capital</h4>
- 
-                    <p>Pan brioche artesanal con 3 tortas Angus smash, 2 quesos cheddar, 1 queso pepper jack
-                        tocineta crujiente, tomate fresco y salsa
-                    </p>
- 
-                    <p class="precio">₡8.500</p>
- 
-                </article>
- 
-                <article id= "rebelde">
- 
-                    <h4>La Rebelde</h4>
- 
-                    <p>Pan brioche artesanal con pulleed pork ahumado durante 8 horas, ensalada coleslaw y salsa BBQ</p>
- 
-                    <p class="precio">₡5.000</p>
- 
-                </article>
- 
-                <article id= "peques">
- 
-                    <h4>Las Peques</h4>
- 
-                    <p>4 Minipanes brioche artesanales con torta Angus smash, queso pepper jack y salsa a escoger. Incluye queso cheddar  derretido para dipear </p>
- 
-                    <p class="precio">₡5.500</p>
- 
-                </article>
- 
-                <article id="pequesMixtas">
-                    <h4>Las Peques Mixtas</h4>
-                    <p> 2 con doble torta smash y 2 con pulled pork y coleslaw</p>
-                    <p class="precio">₡6.000</p>
-                </article>
- 
-            </section>
- 
+                <div class="fotoTitulo">
+                    <img src="../img/distritoHumo/burger.webp" alt="foto burgers">
+                    <div class="titulo">
+                        <h3>Burgers</h3>
+                        <p><em>Acompañada con Papas</em></p>
+                    </div>
+                </div>
+
+                <div class="categorias distritoHumo">
+                    <article id="smash" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>La Smash</h4>
+                            <p>Pan brioche artesanal con torta Angus smash, queso cheddar derretido, tocineta crujiente,
+                            pepinillos, tomate fresco, salsa chipotle y salsa de la casa</p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡5.500</p>
+                        </div>
+                    </article>
+
+                    <article id="distrito" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>La Distrito</h4>
+                            <p>Pan brioche artesanal con doble torta Angus smash, queso cheddar, queso pepper jack, tocineta crujiente,
+                            pepinillos y salsa de la casa</p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡6.500</p>
+                        </div>
+                    </article>
+
+                    <article id="capital" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>La Capital</h4>
+                            <p>Pan brioche artesanal con 3 tortas Angus smash, 2 quesos cheddar, 1 queso pepper jack
+                                tocineta crujiente, tomate fresco y salsa
+                            </p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡8.500</p>
+                        </div>
+                    </article>
+
+                    <article id="rebelde" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>La Rebelde</h4>
+                            <p>Pan brioche artesanal con pulleed pork ahumado durante 8 horas, ensalada coleslaw y salsa BBQ</p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡5.000</p>
+                        </div>
+                    </article>
+
+                    <article id="peques" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>Las Peques</h4>
+                            <p>4 Minipanes brioche artesanales con torta Angus smash, queso pepper jack y salsa a escoger. Incluye queso cheddar derretido para dipear</p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡5.500</p>
+                        </div>
+                    </article>
+
+                    <article id="pequesMixtas" class="platillo">
+                        <div class="nombreDescripcion">
+                            <h4>Las Peques Mixtas</h4>
+                            <p>2 con doble torta smash y 2 con pulled pork y coleslaw</p>
+                        </div>
+                        <div class="precio">
+                            <p class="precio">₡6.000</p>
+                        </div>
+                    </article>
+                </div>
+            </section>   
+
             <section id="salsas">
-                <article>
-                    <h3>Las Salsas</h3>
- 
+                <div class="listas">
+
+                    <article id="salsasCuadro" class="tituloLista centradaDesktop">
+                        <div class="tituloProducto">
+                            <h3>Las Salsas</h3>
+                        </div>
                     <ul>
                         <li>BBQ</li>
                         <li>Especial</li>
@@ -192,89 +202,99 @@
                         <li>Capital (con ajo)</li>
                     </ul>
                 </article>
+                </div>
+
             </section>
  
            <section id="bbqFries">
- 
-                <img src="../img/distritoHumo/papasGreñudas.webp" alt="foto papas greñudas">
- 
                 <h3>BBQ & Fries</h3>  
- 
-                <article id= "grenuda">
- 
-                    <h4>Papas Greñudas</h4>
- 
-                    <p>Papas fritas cargadas con pulled pork, queso mozzarella, tomate fresco, trocitos de tocineta crujiente,
-                        salsa de queso cheddar y salsa BBQ</p>
-                    </p>
- 
-                    <p class="precio">₡5.000</p>
-                    <p>Con carne de res: <span class="precio">₡6.000</span></p>
- 
- 
-                </article>
- 
+
+            <section id="bbqFries">
+                <div class="fotoTitulo">
+                    <img src="../img/distritoHumo/papasGreñudas.webp" alt="foto papas greñudas">
+                    <div class="titulo">
+                        <h3>BBQ & Fries</h3>
+                    </div>
+                </div>
+
+                <div class="categorias distritoHumo">
+                    <article id="grenuda" class="platillo centradaDesktop">
+                        <div class="nombreDescripcion">
+                            <h4>Papas Greñudas</h4>
+                            <p>Papas fritas cargadas con pulled pork, queso mozzarella, tomate fresco,<br> trocitos de tocineta crujiente,
+                                salsa de queso cheddar y salsa BBQ <br>
+                            Con carne de res: <span id="precioSecundario">₡6.000</span></p>
+                        </div>
+                        <div class="precio">
+                            <p>₡5.000</p>
+                        </div>
+                    </article>
+                </div>
             </section>
- 
+
             <section id="especialidadCasa">
- 
-                <img src="../img/distritoHumo/EspecialidadCasa.webp" alt="foto papas greñudas">
- 
-                <h3>Especialidad de la casa</h3>  
- 
-                <article id= "famosa">
- 
-                    <h4>La famosa (costilla BBQ)</h4>
-                    <p><em>Disponible viernes: desde las 6pm, sábados y domingos todo el día hasta agotar existencias</em></p>
-                    <p>300g de costilla ahumada durante 8 horas, cocida lentamente para lograr una textura suave, jugosa y llena sabor a ahumado.
-                        Acompañada con papas fritas y ensalada coleslaw.
-                    </p>
- 
-                    <p class="precio">₡7.500</p>
- 
-                </article>
- 
+                <div class="fotoTitulo">
+                    <img src="../img/distritoHumo/EspecialidadCasa.webp" alt="foto papas greñudas">
+                    <div class="titulo">
+                        <h3>Especialidad de la casa</h3>
+                    </div>
+                </div>
+
+                <div class="categorias distritoHumo">
+                    <article id="famosa" class="platillo centradaDesktop">
+                        <div class="nombreDescripcion">
+                            <h4>La famosa (costilla BBQ)</h4>
+                            <p><em>Disponible viernes: desde las 6pm, sábados y domingos todo el día hasta agotar existencias</em></p>
+                            <p>300g de costilla ahumada durante 8 horas, cocida lentamente para lograr una textura suave, jugosa y llena sabor a ahumado.
+                                Acompañada con papas fritas y ensalada coleslaw.
+                            </p>
+                        </div>
+                        <div class="precio">
+                            <p>₡7.500</p>
+                        </div>
+                    </article>
+                </div>
             </section>
  
  
             </section>
  
             <section id="extras">
-               
-                <h3>Extras</h3>  
- 
-                <article id= "listaExtras">
- 
-                    <ul>
-                        <li>Orden de papas Fritas con salsa a escoger .......... <span class="precio">₡1.000</span></li>
-                        <li>Orden de papas Fritas con salsa de queso .......... <span class="precio">₡1.500</span></li>
-                        <li>Coleslaw.......................<span class="precio">₡500</span> </li>
-                        <li>Extra de Queso..............<span class="precio">₡400</span></li>
-                        <li>Orden de Papas..............<span class="precio">₡900</span></li>
-                        <li>Salsa Cheddar................<span class="precio">₡400</span></li>
-                        <li>Torta de Carne...............<span class="precio">₡1500</span></li>
- 
-                    </ul>
- 
-                </article>
+               <div class="listas">
+                    <article id="extrasArticulo" class = "tituloLista">
+                        <div class="tituloProducto">
+                            <h4>Extras</h4>  
+                        </div>
+
+                        <ul>
+                            <li>Orden de papas Fritas con salsa a escoger .......... <span class="precio">₡1.000</span></li>
+                            <li>Orden de papas Fritas con salsa de queso .......... <span class="precio">₡1.500</span></li>
+                            <li>Coleslaw.......................<span class="precio">₡500</span> </li>
+                            <li>Extra de Queso..............<span class="precio">₡400</span></li>
+                            <li>Orden de Papas..............<span class="precio">₡900</span></li>
+                            <li>Salsa Cheddar................<span class="precio">₡400</span></li>
+                            <li>Torta de Carne...............<span class="precio">₡1500</span></li>
+    
+                        </ul>
+                    </article>
+               </div>
             </section>
  
             <section id="bebidas">
- 
-                <h3>Bebidas</h3>  
-                <p class="precio"><em>₡1.500</em></p>
-                <article id= "listaBebidas">
- 
-                    <ul>
-                        <li>Coca-Cola Regular....................355ml</li>
-                        <li>Coca-Cola Sin Azúcar...............355ml</li>
-                        <li>Tropical Té de Limón...............350ml</li>
-                        <li>Tropical Melocotón Cero..........350ml</li>
-                    </ul>
- 
-                </article>
- 
- 
+                <div class="listas">
+                    <article id= "listaBebidas" class="tituloLista">
+                        <div class="tituloProducto">
+                             <h4>Bebidas</h4>  
+                        </div>
+                        <ul>
+                            <li>Coca-Cola Regular....................355ml</li>
+                            <li>Coca-Cola Sin Azúcar...............355ml</li>
+                            <li>Tropical Té de Limón...............350ml</li>
+                            <li>Tropical Melocotón Cero..........350ml</li>
+                        </ul>
+                        <p id="precioBebidas"><em>₡1.500</em></p>
+                    </article>
+                </div>
             </section>
  
  

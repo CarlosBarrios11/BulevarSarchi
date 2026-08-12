@@ -1,23 +1,23 @@
 /*Carrusel*/
-
+ 
 .carruselContainer{
   position: relative;
   max-width: 1070px; /*Hasta llegar a 1070px se ve así*/
   margin: 20px auto;
   overflow: hidden;
 }
-
+ 
 .carrusel{
   display: flex; /*Coloca las imágenes en horizontal*/
   transition: transform .5s ease-in-out;
 }
-
+ 
 .carruselItem{
   min-width: 100%; /*Abarca todo el ancho de la pantalla*/
   position: relative;
   overflow: hidden; /* para que el blur no se salga del contenedor */
 }
-
+ 
 .carruselItem img {
   width: 100%;
   height: 550px;
@@ -25,8 +25,8 @@
   display:block;
   position: relative;
 }
-
-
+ 
+ 
 .fondoBorroso {
   position: absolute;
   top: 0;
@@ -39,13 +39,13 @@
   transform: scale(1.15); /* evita bordes claros por el blur */
   z-index: 0;
 }
-
+ 
 .carruselBoton img {
     width: 40px;
     height: 40px;
-} 
-
-
+}
+ 
+ 
 /*Botones de seguir, retroceder*/
 .carruselBoton {
   position: absolute;
@@ -58,22 +58,22 @@
   font-size: 18px;
   transition: background .3s;
 }
-
-
+ 
+ 
 .carruselBoton:hover {
   background: rgba(0, 0, 0, 0.8);
 }
-
+ 
 .carruselBotonPrev{
   left: 10px;
 }
-
+ 
 .carruselBotonNext {
   right: 10px;
 }
-
+ 
 /*Puntos de desplazamiento*/
-
+ 
 .contentIndicators{
   position: absolute;
   bottom: 20px;
@@ -82,7 +82,7 @@
   display: flex;
   gap: 10px;
 }
-
+ 
 .indicator{
   width: 15px;
   height: 15px;
@@ -91,18 +91,18 @@
   cursor: pointer;
   transition: background .3s;
 }
-
+ 
 .indicator.active{
   background-color: white;
 }
-
+ 
 .fotoTitulo img {
   object-fit: cover;
   height: 150px;
   width: 90%;
   border-radius: 8px;
 }
-
+ 
 /*Opacidad de la imagen de las secciones*/
 .fotoTitulo img{
   background-color: rgb(0, 0, 0);
@@ -110,28 +110,28 @@
   filter:brightness(70%);
   z-index: 30;
 }
-
+ 
 @media (min-width: 560px) {
   .carruselBoton img {
     width: 60px;
     height: 60px;
-    
+   
   }
-
+ 
   .carruselItem img {
     width: 100%;
     height: 700px;
     object-fit: contain;
   }
-
+ 
   .fondoBorroso {
     background-image: url();
     filter: blur(10px);
     /*La profundidad va a ser baja y siempre va estar por debajo todos los elementos del carrusel (botones flecha, puntos de índice y la img que va a ir arriba)*/
   }
-  
+ 
 }
-
+ 
 /*Opciones de modificación para encabezado de cada sección*/
 /*Hero*/
 .fotoTitulo{
@@ -139,7 +139,7 @@
   justify-content: center;
   position: relative;
 }
-
+ 
 .titulo{
   position: absolute;
   color: brown;
@@ -147,19 +147,19 @@
   left: 30%;
   transform: translateX(-50%);
 }
-
-
+ 
+ 
 /*Opciones de modificación para las cartas de cada producto (INDIVIDUAL)*/
 /*Grid del menú de las tiendas de comida*/
 /*Conjunto de artículos, que corresponde al conjunto de cards*/
 .categorias {
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna */
-    gap: 1rem; 
+    gap: 1rem;
     padding: 1rem;
-    
+   
 }
-
+ 
 /*Card*/
 .platillo {
     background: rgba(255, 255, 255, 0.7);
@@ -171,19 +171,19 @@
     display: grid; /*Activar segundo grid para establecer dos columnas en el contenido del card*/
     grid-template-columns: 87% 13%;
     align-items: center; /*Centrar el contendido del card e height*/
-    height: 7rem;
+    height: 12rem;
 }
-
-
-
+ 
+ 
+ 
 /*Opciones de modificación para las listas de productos*/
   .listas {
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna */
-    gap: 1rem; 
+    gap: 1rem;
     padding: 1rem;
   }
-  
+ 
   .tituloLista {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(4px); /* Desenfoque de fondo */
@@ -195,37 +195,37 @@
     width: 100%;
     margin: 0 auto;
   }
-
+ 
   .tituloProducto {
     text-align: center;
     padding: 0.5rem 0;
-    
+   
   }
 
-  
-
+ 
   .listas ul li {
     display: flex;
     justify-content: center;
   }
-
+ 
   /*Tamaño de la letra para la descripción del producto*/
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
-
+ 
   /*Tamaño de la letra para el precio del producto*/
   .precio p{
       font-size: 1rem;
   }
 
-  /*Borde redondeado de las */
-  
-
 
 
 @media screen and (min-width: 910px){
+ 
 
+  .platillo{
+    height: 9rem;
+  }
   /*Contenedor de las fichas*/
     .categorias {
       /*Se vuelven 2 columnas*/
@@ -235,25 +235,35 @@
         width: 80%;
         padding: 1rem 2rem;
     }
-
+ 
     /*Carta larga y centrada como excepción de cuando hay secciones que tienen una fila con una sola columna
     como en id="mojito-flor-de-cana" de aurum*/
     .platillo.centradaDesktop {
     grid-column: 1/-1; /* Ocupa toda la fila, le quita el formato 2 columnas*/
-    justify-self: start; 
+    justify-self: start;
     margin: 0 auto;
     width: 50%;
   }
-
+ 
   .tituloLista{
     width: 37%;
   }
-
-
+ 
+ 
   /*Dimensiones del hero en desktop*/
   .fotoTitulo img {
     width: 1275px;
     height: 250px;
   }
 
+  p {
+    font-size: 1rem;
+  }
+
+  .listas ul li {
+    font-size: 1rem;
+  }
+ 
 }
+ 
+ 
