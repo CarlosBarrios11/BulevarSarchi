@@ -10,3 +10,53 @@ header, footer{
   color: white;
 }
 
+.platillo:hover{
+  box-shadow: 0 12px 20px #4f664dd9;
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------menu */
+.platillo {
+  display: flex;
+  height: 9.5rem;
+}
+
+#acompanamientosAloha,
+#salsasAlohaBowlo{
+  height: 20rem;
+}
+
+#acompanamientosBigAloha,
+#salsas{
+  height: 20rem;
+}
+
+.platillo ul li{
+  list-style: none;
+}
+
+.tituloLista{
+  display: grid; 
+  height: 10rem;
+  background-color: #364335;
+}
+
+.listas ul li{
+  text-align: left ;
+}
+
+.precioBowlo{
+  justify-self: center;
+  font-size: 0ch;
+  background-color: #51654f;
+  border-radius: 27px;
+  color: white;
+  gap: 10px;
+  margin: 20px;
+}
+
+
+
+
+
+
