@@ -56,9 +56,16 @@ header, footer{
 }
 
 .platillo.centradaDesktop{
-  justify-content: center;
   height: 15rem;
+  }
+
+
+@media screen and (min-width: 910px){
+  .platillo.centradaDesktop{
+  justify-content: center;
+  }
 }
+
 
 
 
