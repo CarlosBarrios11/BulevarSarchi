@@ -5,3 +5,30 @@
 .nav li a{
     color: black;
 }
+
+.platillo:hover{
+    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+.tituloLista:hover{
+    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+.platillo.centradaDesktop {
+    height: 14.5rem;
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+}
+
+#listaExtras ul{
+    list-style: none;
+}
+
+.extras h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
