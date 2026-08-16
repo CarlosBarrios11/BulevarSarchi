@@ -55,7 +55,10 @@ header, footer{
   margin: 20px;
 }
 
-
+.platillo.centradaDesktop{
+  justify-content: center;
+  height: 15rem;
+}
 
 
 
