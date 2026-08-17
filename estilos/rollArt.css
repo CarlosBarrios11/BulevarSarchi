@@ -15,6 +15,16 @@ h1{
     color: black;
 }
 
+.nombreLista {
+  font-weight: bold;
+  white-space: pre-wrap;
+
+}
+
+#salsas ul li{
+  font-size: 0.9rem;
+}
+
 /* Convierte la imagen del botón hamburguesa de blanco a negro */
 .abrirMenu img,
 .cerrarMenu img {
@@ -35,4 +45,38 @@ h1{
 
 footer{
   background-color: #F0A096;
+}
+
+#salsas {
+  height: 18rem;
+  }
+
+#toppings {
+  height: 16rem;
+}
+
+#empaque {
+  height: 4rem;
+}
+
+#listaPostres {
+  height: 10rem;
+}
+
+#listaBubblesTea {
+  height: 18rem;
+}
+
+#listaEntradas {
+  height: 10rem;
+}
+
+@media screen and (min-width:798px) {
+  #salsas ul li{
+    font-size: 1rem;
+  }
+
+  #salsas {
+  height: 18rem;
+  }
 }
