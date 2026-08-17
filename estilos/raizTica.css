@@ -44,6 +44,28 @@ ul li {
     list-style: none;
 }
 
+#extrasFuertes {
+    height: 10rem;
+}
+
+
+#empanadasArtesanales {
+    height: 18rem;
+}
+
+#extrasBebidas {
+    height: 10rem;
+}
+
+#gaseosas {
+    height: 16rem;
+}
+
+#reposteria {
+    height: 7rem;
+}
+
+
 @media screen and (min-width: 1400px) {
 
     .menu nav{ 
