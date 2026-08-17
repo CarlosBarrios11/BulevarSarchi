@@ -16,11 +16,10 @@ img {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 40px 20px 20px;
     width: 100%;
 }
  
-footer h4 {
+footer p {
     margin-bottom: 12px;
     font-weight: 600;
     font-size: 1.3rem;
@@ -28,8 +27,6 @@ footer h4 {
  
 footer ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
  
 footer a {
@@ -130,7 +127,7 @@ footer hr {
  
 @media (min-width: 1000px) {
     footer {
-        padding: 60px 60px 25px;
+        padding-top: 30px;
     }
  
     .footerTop {
@@ -140,7 +137,7 @@ footer hr {
             "horario siguenos contacto"
             "horario boton contacto";
         align-items: start;
-        gap: 30px;
+        gap: 10px;
         max-width: 1400px;
         margin: 0 auto;
     }
@@ -150,7 +147,7 @@ footer hr {
         text-align: center;
     }
  
-    .footerHorario h4 {
+    .footerHorario p {
         text-align: center;
     }
  
@@ -159,7 +156,7 @@ footer hr {
         text-align: center;
     }
  
-    .footerContacto h4 {
+    .footerContacto p {
         text-align: center;
     }
  
@@ -174,15 +171,15 @@ footer hr {
         
     }
  
-    .footerHorario h4,
-    .footerContacto h4,
-    .footerSiguenos h4 {
+    .footerHorario p,
+    .footerContacto p,
+    .footerSiguenos p {
         font-size: 1.7rem;
     }
  
     .footerHorario ul li,
     .footerContacto ul li a {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
  
     .logoFooter {
@@ -206,18 +203,17 @@ footer hr {
  
     .btnResenas {
         background-color: #7a3c1c;
-        padding: 14px 36px;
+        padding: 15px 36px;
         font-size: 1.15rem;
         
     }
-
-   
  
     footer hr {
-        margin: 45px 0 20px;
+        margin: 10px 0 10px;
     }
  
     .copyright {
         font-size: 1rem;
+        padding: 5px 0;
     }
 }
