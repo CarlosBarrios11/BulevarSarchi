@@ -108,6 +108,7 @@
   filter:brightness(70%);
 }
  
+/*Medida baja para evitar que ciertas imagenes (Ironfit) quede cortada*/
 @media (min-width: 430px) {
   .carruselBoton img {
     width: 60px;
