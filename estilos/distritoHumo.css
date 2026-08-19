@@ -9,9 +9,7 @@
     font-weight: bold;
 }
 
-.tituloLista li {
-    font-size: 12px;
-}
+
 
 #precioBebidas {
     text-align: center;
@@ -29,6 +27,14 @@
 
 #salsasCuadro {
     height: 10rem;
+}
+
+.tituloLista li {
+  font-size: 13px;
+}
+
+.titulo p{
+    color: white;
 }
 
 
