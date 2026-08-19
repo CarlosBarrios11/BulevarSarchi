@@ -80,10 +80,7 @@ h1 span{
   bottom: 0;
   background-color: #7a3c1c;
   padding: 2rem;
-  /*Sombra del background cuando se abre el menu hanburguesa*/
-  /* box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); */
-  z-index: 30;
-  
+  z-index: 40;
 }
 
 .nav.visible {

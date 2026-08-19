@@ -2,16 +2,6 @@
     background-color: rgb(116, 2, 2);
 }
 
-.platillo:hover{
-    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
-    transform: translateY(-1px);
-}
-
-.tituloLista:hover {
-    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
-    transform: translateY(-1px);
-}
-
 /*Altura del contenedor de la lista de productos, para adaptarla a beto's pizza*/
 .tituloLista{
     height: 16rem;
@@ -29,5 +19,18 @@
 }
 #foccacia .nombreDescripcion {
     align-items: center;
+}
+}
+
+
+@media (hover: hover) {
+    .platillo:hover{
+    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+    transform: translateY(-1px);
+}
+
+.tituloLista:hover {
+    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+    transform: translateY(-1px);
 }
 }
