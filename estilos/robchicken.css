@@ -1,7 +1,19 @@
 #nav{
-  background-color: #b8810b;
+  background-color: #c8990cef;
 }
 
 #salsas{
   height: 25rem;
+}
+
+@media (hover: hover) {
+    .platillo:hover{
+    box-shadow: 0 12px 20px #c8990cef;
+    transform: translateY(-1px);
+    }
+
+    .tituloLista:hover {
+        box-shadow: 0 12px 20px #c8990cef;
+        transform: translateY(-1px);
+    }
 }

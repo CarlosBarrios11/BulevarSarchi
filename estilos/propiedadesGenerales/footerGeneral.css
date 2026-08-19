@@ -20,7 +20,6 @@ footer {
 }
  
 footer p {
-    margin-bottom: 12px;
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -32,10 +31,6 @@ footer ul {
 footer a {
     color: #fff;
     text-decoration: none;
-}
- 
-footer a:hover {
-    text-decoration: underline;
 }
  
 .footerTop {
@@ -104,13 +99,6 @@ footer a:hover {
  
 .btnResenas a {
     color: #fff;
-    
-}
- 
-.btnResenas:hover {
-    background-color: #7a3c1c;
-    transform: scale(1.2);
-    list-style: none;
 }
  
 footer hr {
@@ -137,7 +125,7 @@ footer hr {
             "horario siguenos contacto"
             "horario boton contacto";
         align-items: start;
-        gap: 10px;
+        gap: 20px;
         max-width: 1400px;
         margin: 0 auto;
     }
@@ -203,7 +191,6 @@ footer hr {
  
     .btnResenas {
         background-color: #7a3c1c;
-        padding: 15px 36px;
         font-size: 1.15rem;
         
     }

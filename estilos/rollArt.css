@@ -80,3 +80,15 @@ footer{
   height: 18rem;
   }
 }
+
+@media (hover: hover) {
+    .platillo:hover{
+    box-shadow: 0 12px 20px #d5877d;
+    transform: translateY(-1px);
+    }
+
+    .tituloLista:hover {
+        box-shadow: 0 12px 20px #d5877d;
+        transform: translateY(-1px);
+    }
+}
