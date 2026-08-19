@@ -105,7 +105,7 @@
  
 /*Opacidad de la imagen de las secciones*/
 .fotoTitulo img{
-  filter:brightness(70%);
+  filter:brightness(50%);
 }
  
 /*Medida baja para evitar que ciertas imagenes (Ironfit) quede cortada*/
@@ -139,10 +139,14 @@
  
 .titulo{
   position: absolute;
-  color: brown;
-  bottom: 20px;
-  left: 30%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulo h3 {
+  font-size: 2.5rem;
+  color: white;
 }
  
  
