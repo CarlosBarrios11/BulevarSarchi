@@ -10,11 +10,6 @@ header, footer{
   color: white;
 }
 
-.platillo:hover{
-  box-shadow: 0 12px 20px #4f664dd9;
-  transform: translateY(-1px);
-}
-
 /* --------------------------------------------------menu */
 .platillo {
   display: flex;
@@ -66,7 +61,16 @@ header, footer{
   }
 }
 
+@media (hover: hover) {
+    .platillo:hover{
+    box-shadow: 0 12px 20px #51654f;
+    transform: translateY(-1px);
+}
 
-
+.tituloLista:hover {
+    box-shadow: 0 12px 20px #51654f;
+    transform: translateY(-1px);
+}
+}
 
 
