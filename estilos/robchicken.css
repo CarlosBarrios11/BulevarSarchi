@@ -6,6 +6,15 @@
   height: 25rem;
 }
 
+#orden-pa-picar{
+  height: 11rem;
+}
+
+.textoCentro{
+  text-align: center;
+  margin: 2px;
+}
+
 @media (hover: hover) {
     .platillo:hover{
     box-shadow: 0 12px 20px #c8990cef;

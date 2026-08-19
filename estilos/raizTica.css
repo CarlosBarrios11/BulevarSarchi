@@ -49,8 +49,13 @@ ul li {
     height: 16rem;
 }
 
-#reposteria {
-    height: 7rem;
+#reposteriaTarjeta {
+    height: 6rem;
+}
+
+.textoCentro{
+    text-align: center;
+    margin: 2px;
 }
 
 
