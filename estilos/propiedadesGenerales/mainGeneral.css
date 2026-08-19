@@ -105,17 +105,13 @@
  
 /*Opacidad de la imagen de las secciones*/
 .fotoTitulo img{
-  background-color: rgb(0, 0, 0);
-  opacity: 400;
   filter:brightness(70%);
-  z-index: 30;
 }
  
-@media (min-width: 560px) {
+@media (min-width: 430px) {
   .carruselBoton img {
     width: 60px;
     height: 60px;
-   
   }
  
   .carruselItem img {
@@ -163,7 +159,6 @@
 /*Card*/
 .platillo {
     background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(4px); /* Desenfoque de fondo */
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
@@ -216,6 +211,10 @@
   /*Tamaño de la letra para el precio del producto*/
   .precio p{
       font-size: 1rem;
+  }
+
+  .nota {
+      font-size: 12px;
   }
 
 

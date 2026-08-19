@@ -16,10 +16,6 @@
     font-size: 12px;
 }
 
-.tituloLista{
-        height: 15rem;
-    }
-
 #precioBebidas {
     text-align: center;
     font-weight: bold;
@@ -30,6 +26,14 @@
     background-color: rgba(0, 0, 0, 0.83);
 }
 
+.tituloLista {
+    height: 12rem;
+}
+
+#salsasCuadro {
+    height: 10rem;
+}
+
 @media screen and (min-width: 910px) {
     #salsasCuadro {
     width: 20%;
@@ -37,8 +41,12 @@
     }
     
     #grenuda, #famosa{
-        height: 8rem;
+        height: 8.5rem;
         width: 60%;
+    }
+
+    .tituloLista {
+        height: 15rem;
     }
 }
 
