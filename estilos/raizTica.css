@@ -12,19 +12,29 @@ h1{
 
 #segundoNav{
     background-color: #5e8015;
-    padding: 15px;
-    text-align: center;
-    
-
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap; /* Para que los items bajen de línea en móvil */
+    justify-content: center;
+    top: 0;
+    z-index: 35;
 }
 
 #segundoNav a{
-    width: 100%;
+    white-space: nowrap;       /* Evita que cada item se rompa en varias líneas */
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
     text-decoration: none;
     color: white;
-    padding: 10px;
-    font-size: 1rem;
-    
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+@media(hover:hover) {
+    #segundoNav a:hover {
+    background: #425a0f;
+}
 }
 
 
@@ -62,12 +72,9 @@ ul li {
 @media screen and (min-width: 1400px) {
 
     .menu nav{ 
-        position: sticky;
-        top: 0;  
-        z-index: 100; 
         padding: 0.5rem; 
         display: flex; 
-        gap: 1rem; 
+        gap: 0.5rem; 
         overflow-x: auto;
     }
 
