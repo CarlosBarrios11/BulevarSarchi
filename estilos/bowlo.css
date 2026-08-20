@@ -77,4 +77,9 @@ header, footer{
 }
 }
 
+/* color para que el nav se vea como selecionado */
+.nav .active{
+  background-color: #303b2f;
+}
+
 

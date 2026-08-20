@@ -25,12 +25,17 @@
 
 @media (hover: hover) {
     .platillo:hover{
-    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
-    transform: translateY(-1px);
+        box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+        transform: translateY(-1px);
+    }
+
+    .tituloLista:hover {
+        box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
+        transform: translateY(-1px);
+    }
 }
 
-.tituloLista:hover {
-    box-shadow: 0 12px 20px rgba(116, 2, 2, 0.844);
-    transform: translateY(-1px);
-}
+/* color para que el nav se vea como selecionado */
+.nav .active{
+    background-color:  rgb(82, 2, 2);
 }

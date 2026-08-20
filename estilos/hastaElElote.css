@@ -29,3 +29,8 @@
         transform: translateY(-1px);
     }
 }
+
+/* color para que el nav se vea como selecionado */
+.nav .active{
+    background-color: #c1903a;
+}

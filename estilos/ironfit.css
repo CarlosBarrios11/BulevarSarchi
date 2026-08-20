@@ -1,6 +1,5 @@
 #nav{
   background-color: #a6a223;
-  
 }
 
 .nav li a{
@@ -175,4 +174,9 @@ body {
     line-height: 1.75;
     text-align: center;
   }
+}
+
+/* color para que el nav se vea como selecionado */
+.nav .active{
+  background-color: #8b871d;
 }

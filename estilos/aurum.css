@@ -15,12 +15,17 @@ body {
 /*El hover : hover nos dice que si hay mouse se activa el hover y si no, pues no*/
 @media (hover: hover) {
     .platillo:hover{
-    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
-    transform: translateY(-1px);
+        box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+        transform: translateY(-1px);
+    }
+
+    .tituloLista:hover{
+        box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
+        transform: translateY(-1px);
+    }
 }
 
-.tituloLista:hover{
-    box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
-    transform: translateY(-1px);
-}
+/* color para que el nav se vea como selecionado */
+.nav .active{
+    background-color: #967114;
 }
