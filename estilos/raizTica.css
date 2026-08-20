@@ -23,8 +23,9 @@ h1{
 
 #segundoNav a{
     white-space: nowrap;       /* Evita que cada item se rompa en varias líneas */
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem 0.5rem;
+    margin: 5px auto;
     text-decoration: none;
     color: white;
     border-radius: 4px;
