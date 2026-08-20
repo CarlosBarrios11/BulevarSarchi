@@ -107,6 +107,12 @@
 .fotoTitulo img{
   filter:brightness(50%);
 }
+
+/* tamaño de la tipografia en las listas */
+.tituloLista li {
+  font-size: 14px;
+}
+
  
 /*Medida baja para evitar que ciertas imagenes (Ironfit) quede cortada*/
 @media (min-width: 430px) {
@@ -145,8 +151,9 @@
 }
 
 .titulo h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
+  text-align: center;
 }
  
  
@@ -219,7 +226,7 @@
   }
 
   .nota {
-      font-size: 12px;
+    font-size: 12px;
   }
 
 
@@ -267,6 +274,14 @@
   .listas ul li {
     font-size: 1rem;
   }
+
+
+/* texto del título en desktop */
+  .titulo h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+ 
  
 }
  

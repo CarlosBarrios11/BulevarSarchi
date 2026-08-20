@@ -15,6 +15,12 @@
   margin: 2px;
 }
 
+.titulo em {
+
+  color: white;
+  text-align: center;
+}
+
 @media (hover: hover) {
     .platillo:hover{
     box-shadow: 0 12px 20px #c8990cef;
