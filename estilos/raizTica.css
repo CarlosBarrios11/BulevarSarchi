@@ -36,18 +36,42 @@ h1{
 
 /*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 
 y no quede tapado por el segundo nav*/
+.scrollTop{
+    scroll-margin-top: 165px;
+}
+
+
+    /*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
+@media screen and (min-width: 261px) {
     .scrollTop{
-        scroll-margin-top: 165px;
+        scroll-margin-top: 275px;
     }
+}
 
-
-/*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
-@media screen and (max-width: 356px) {
+@media screen and (min-width: 281px) {
     .scrollTop{
-    scroll-margin-top: 225px;
+        scroll-margin-top: 220px;
+    }
 }
-    
+
+@media screen and (min-width: 356px) {
+    .scrollTop{
+        scroll-margin-top: 170px;
+    }
 }
+
+@media screen and (min-width: 495px) {
+    .scrollTop{
+        scroll-margin-top: 115px;
+    }
+}
+
+@media screen and (min-width: 987px) {
+    .scrollTop{
+        scroll-margin-top: 60px;
+    }
+}
+
 
 @media(hover:hover) {
     #segundoNav a:hover {

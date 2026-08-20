@@ -12,8 +12,39 @@ body {
     background-color: #B8860B;
 }
 
+
+/* color para que el nav se vea como selecionado */
+.nav .active{
+    background-color: #967114;
+}
+
+
+#segundoNav{
+    background-color: #B8860B;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap; /* Para que los items bajen de línea en móvil */
+    top: 0;
+    z-index: 35;
+    padding: 0;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+#segundoNav a{
+    white-space: nowrap;       /* Evita que cada item se rompa en varias líneas */
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.2s;
+    height: 100%;
+}
+
+
 /*El hover : hover nos dice que si hay mouse se activa el hover y si no, pues no*/
-@media (hover: hover) {
+@media (hover:hover) {
     .platillo:hover{
         box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
         transform: translateY(-1px);
@@ -23,9 +54,72 @@ body {
         box-shadow: 0 12px 20px rgba(230, 222, 2, 0.844);
         transform: translateY(-1px);
     }
+
+    #segundoNav a:hover {
+    background: #967114;
+}
 }
 
-/* color para que el nav se vea como selecionado */
-.nav .active{
-    background-color: #967114;
+/*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 
+y no quede tapado por el segundo nav*/
+.scrollTop{
+    scroll-margin-top: 165px;
+}
+
+/*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
+@media screen and (min-width: 261px) {
+    .scrollTop{
+        scroll-margin-top: 275px;
+    }
+}
+
+@media screen and (min-width: 333px) {
+    .scrollTop{
+        scroll-margin-top: 220px;
+    }
+}
+
+@media screen and (min-width: 339px) {
+    .scrollTop{
+        scroll-margin-top: 170px;
+    }
+}
+
+@media screen and (min-width: 509px) {
+    .scrollTop{
+        scroll-margin-top: 115px;
+    }
+}
+
+
+@media screen and (min-width: 1013px) {
+    /*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 
+    y no quede tapado por el segundo nav*/
+    .scrollTop{
+        scroll-margin-top: 60px;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .menu nav{ 
+        padding: 0.5rem; 
+        display: flex; 
+        gap: 0.5rem; 
+        overflow-x: auto;
+    }
+
+    /*Espaciado entre los elementos del nav*/
+    #segundoNav {
+        gap: 15px;
+    }
+
+    #segundoNav a{
+        font-size: 1.3rem;
+    }
+
+    .scrollTop{
+        scroll-margin-top: 65px;
+    }
 }
