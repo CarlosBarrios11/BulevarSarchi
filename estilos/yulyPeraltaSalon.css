@@ -210,3 +210,8 @@ body {
 #nav{
   background-color: #bda262;
 }
+
+/* color para que el nav se vea como selecionado */
+.nav .active{
+  background-color: #a58d55;
+}

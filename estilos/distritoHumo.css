@@ -66,3 +66,8 @@
         transform: translateY(-1px);
     }
 }
+
+/* color para que el nav se vea como selecionado */
+.nav .active{
+  background-color: rgba(17, 17, 17, 0.83);
+}
