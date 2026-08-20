@@ -26,7 +26,7 @@ h1{
 #segundoNav a{
     white-space: nowrap;       /* Evita que cada item se rompa en varias líneas */
     font-size: 1rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.3rem;
     text-decoration: none;
     color: white;
     transition: background 0.2s;
@@ -36,18 +36,14 @@ h1{
 
 /*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 
 y no quede tapado por el segundo nav*/
-#fuerte, #ligero, #brunch, #casados, #especialidades,
-#ceviche, #caldosas, #pastas, #empanadas, #tortillas,
-#bebidas, #reposteria{
-    scroll-margin-top: 165px;
-}
+    .scrollTop{
+        scroll-margin-top: 165px;
+    }
 
 
 /*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
-@media screen and (max-width: 387px) {
-    #fuerte, #ligero, #brunch, #casados, #especialidades,
-    #ceviche, #caldosas, #pastas, #empanadas, #tortillas,
-    #bebidas, #reposteria{
+@media screen and (max-width: 356px) {
+    .scrollTop{
     scroll-margin-top: 225px;
 }
     
@@ -100,15 +96,18 @@ ul li {
         overflow-x: auto;
     }
 
+    /*Espaciado entre los elementos del nav*/
+    #segundoNav {
+        gap: 15px;
+    }
+
     #segundoNav a{
         font-size: 1.3rem;
     }
-
+    
     /*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 
     y no quede tapado por el segundo nav*/
-    #fuerte, #ligero, #brunch, #casados, #especialidades,
-    #ceviche, #caldosas, #pastas, #empanadas, #tortillas,
-    #bebidas, #reposteria{
+    .scrollTop{
         scroll-margin-top: 65px;
     }
 
