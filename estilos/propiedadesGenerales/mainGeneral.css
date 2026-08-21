@@ -171,12 +171,11 @@
 /*Card*/
 .platillo {
     background: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
     text-align: start;
     display: grid; /*Activar segundo grid para establecer dos columnas en el contenido del card*/
-    grid-template-columns: 87% 13%;
+    grid-template-columns: 78% 22%;
     align-items: center; /*Centrar el contendido del card e height*/
     height: 12rem;
 }
