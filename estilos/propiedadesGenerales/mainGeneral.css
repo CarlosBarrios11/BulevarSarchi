@@ -174,8 +174,10 @@
     border-radius: 8px;
     border: 1px solid #e9ecef;
     text-align: start;
+    padding: 2rem;
+    gap: 1rem;
     display: grid; /*Activar segundo grid para establecer dos columnas en el contenido del card*/
-    grid-template-columns: 78% 22%;
+    grid-template-columns: 80% 20%;
     align-items: center; /*Centrar el contendido del card e height*/
     height: 12rem;
 }
