@@ -57,6 +57,12 @@
     width: 100%;
 }
 
+/*Quitar grid para el título*/
+.tituloSeccion {
+    grid-column: 1 / -1; 
+}
+
+
 #tiendasComida article, #tiendasGenerales article {
     background-color: #fff;
     border-radius: 12px;
