@@ -151,7 +151,12 @@ h1 span{
 }
 
 
-
+@media screen and (max-height: 760px) {
+  .nav {
+    padding: 1.5rem;
+  }
+  
+}
 
 
 @media screen and (min-width: 1400px) {

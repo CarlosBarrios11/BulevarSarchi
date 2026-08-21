@@ -150,7 +150,10 @@ ul li {
     }
 }
 
-/* color para que el nav se vea como selecionado */
-.nav .active{
-  background-color: #4d6911;
+
+@media (min-width: 1400px) {
+    /* color para que el nav se vea como selecionado */
+    .nav .active{
+      background-color: #4d6911;
+    }
 }

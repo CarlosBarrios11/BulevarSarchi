@@ -97,7 +97,11 @@ footer{
     }
 }
 
-/* color para que el nav se vea como selecionado */
-.nav .active{
-  background-color: #b3756d;
+
+@media (min-width: 1400px) {
+    /* color para que el nav se vea como selecionado */
+    .nav .active{
+      background-color: #b3756d;
+    }
 }
+
