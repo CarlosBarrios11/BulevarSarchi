@@ -13,10 +13,6 @@ body {
 }
 
 
-/* color para que el nav se vea como selecionado */
-.nav .active{
-    background-color: #967114;
-}
 
 
 #segundoNav{
@@ -58,6 +54,13 @@ body {
     #segundoNav a:hover {
     background: #967114;
 }
+}
+
+@media (min-width: 1400px) {
+    /* color para que el nav se vea como selecionado */
+    .nav .active{
+        background-color: #967114;
+    }
 }
 
 /*Cuando hace click en la sección deja un margen top para que se pueda apreciar el producto que realmente es 

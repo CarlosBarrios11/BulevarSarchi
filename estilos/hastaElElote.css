@@ -30,7 +30,10 @@
     }
 }
 
-/* color para que el nav se vea como selecionado */
-.nav .active{
-    background-color: #c1903a;
+
+@media (min-width: 1400px) {
+    /* color para que el nav se vea como selecionado */
+    .nav .active{
+      background-color: #c1903a;
+    }
 }

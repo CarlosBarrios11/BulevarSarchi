@@ -8,6 +8,7 @@
 
 html{
   scroll-behavior: smooth;
+  font-size: 100%; 
 }
 
 body {
@@ -35,4 +36,11 @@ h4{
 
 .precio {
   font-weight: bold;
+}
+
+
+@media (max-width: 667px) {
+  html {
+    font-size: 87.5%; 
+  }
 }
