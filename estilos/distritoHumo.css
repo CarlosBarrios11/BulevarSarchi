@@ -38,20 +38,26 @@
 }
 
 
+@media screen and (max-width: 1051px){
+  .platillo {
+    height: auto;
+  }
+}
+
 
 @media screen and (min-width: 910px) {
     #salsasCuadro {
     width: 20%;
     height: 11rem;
     }
-    
-    #grenuda, #famosa{
-        height: 8.5rem;
-        width: 60%;
-    }
 
     .tituloLista {
         height: 15rem;
+    }
+
+    #grenuda, #famosa{
+        height: auto;
+        width: 60%;
     }
 }
 

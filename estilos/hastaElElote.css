@@ -30,6 +30,12 @@
     }
 }
 
+@media screen and (max-width: 946px){
+  .platillo {
+    height: auto;
+  }
+}
+
 
 @media (min-width: 1400px) {
     /* color para que el nav se vea como selecionado */
