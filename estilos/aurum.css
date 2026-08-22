@@ -39,6 +39,7 @@ body {
 }
 
 
+
 /*El hover : hover nos dice que si hay mouse se activa el hover y si no, pues no*/
 @media (hover:hover) {
     .platillo:hover{

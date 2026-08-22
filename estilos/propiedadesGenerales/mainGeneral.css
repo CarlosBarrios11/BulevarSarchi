@@ -167,7 +167,7 @@
     padding: 1rem;
    
 }
- 
+
 /*Card*/
 .platillo {
     background:rgba(255, 255, 255, 0.7);
@@ -185,6 +185,7 @@
 @media screen and (max-width: 910px){
   .platillo {
     height: auto;
+    padding: 3rem;
   }
 }
 
