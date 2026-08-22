@@ -170,19 +170,24 @@
  
 /*Card*/
 .platillo {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(208, 40, 40, 0.7);
+    padding: 1rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
     text-align: start;
-    padding: 2rem;
     gap: 1rem;
     display: grid; /*Activar segundo grid para establecer dos columnas en el contenido del card*/
-    grid-template-columns: 80% 20%;
-    align-items: center; /*Centrar el contendido del card e height*/
+    grid-template-columns: 1fr auto; /*Segunda columna automática*/
+    align-items: center; 
     height: 12rem;
 }
- 
- 
+ /*297*/
+@media screen and (max-width: 910px){
+  .platillo {
+    height: auto;
+  }
+}
+
  
 /*Opciones de modificación para las listas de productos*/
   .listas {
@@ -234,7 +239,6 @@
 
 @media screen and (min-width: 910px){
  
-
   .platillo{
     height: 9rem;
   }

@@ -110,6 +110,12 @@ ul li {
     margin: 2px;
 }
 
+@media screen and (max-width: 1304px){
+  .platillo {
+    height: auto;
+  }
+}
+
 
 @media screen and (min-width: 1400px) {
 

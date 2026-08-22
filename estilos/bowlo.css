@@ -13,7 +13,6 @@ header, footer{
 /* --------------------------------------------------menu */
 .platillo {
   display: flex;
-  height: 9.5rem;
 }
 
 #acompanamientosAloha,
@@ -24,6 +23,22 @@ header, footer{
 #acompanamientosBigAloha,
 #salsas{
   height: 20rem;
+}
+
+@media screen and (max-width: 909px){
+#acompanamientosAloha,
+#salsasAlohaBowlo{
+  height: auto;
+}
+
+#acompanamientosBigAloha,
+#salsas{
+  height: auto;
+}
+
+#baseTropiBowl {
+  height: auto;
+}
 }
 
 .platillo ul li{
@@ -51,7 +66,7 @@ header, footer{
 
 .platillo.centradaDesktop{
   height: 15rem;
-  }
+}
 
 
 @media screen and (min-width: 910px){
@@ -63,6 +78,14 @@ header, footer{
     grid-column: 1/-1; /*Se cancela el grid del padre y se acomoda en una columna en el centro*/
   }
 
+  .platillo {
+    height: 9.5rem;
+  }
+
+  #baseTropiBowl,
+  #spread {
+    height: 12rem;
+  }
 }
 
 @media (hover: hover) {
