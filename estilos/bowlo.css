@@ -13,6 +13,7 @@ header, footer{
 /* --------------------------------------------------menu */
 .platillo {
   display: flex;
+  padding: 1.5rem;
 }
 
 #acompanamientosAloha,

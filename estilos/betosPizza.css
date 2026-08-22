@@ -25,6 +25,7 @@
 @media screen and (max-width: 978px){
   .platillo {
     height: auto;
+    padding: 2rem;
   }
 }
 
