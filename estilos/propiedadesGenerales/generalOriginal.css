@@ -1,4 +1,4 @@
-
+/* Propiedades generales (sirve para guardar toda los estilos bases de todos los html) */
 
 * {
   box-sizing: border-box;
@@ -39,6 +39,7 @@ h4{
 }
 
 
+/* cuando la pantalla es pequeña se reduce la tamaño de la fuente */
 @media (max-width: 667px) {
   html {
     font-size: 87.5%; 

@@ -4,7 +4,7 @@
 }
  
 
- 
+/* tamaño de la imagen */
 img {
     max-width: 100%;
     height: auto;
@@ -16,11 +16,13 @@ footer {
     width: 100%;
 }
  
+/* datos del footer tales como horario, contacto, etc. */
 footer p {
     font-weight: 600;
     font-size: 1.3rem;
 }
  
+
 footer ul {
     list-style: none;
 }
@@ -30,6 +32,8 @@ footer a {
     text-decoration: none;
 }
  
+
+/* selecion del grid para que diga como acomoda las cosas */
 .footerTop {
     display: grid;
     grid-template-areas:
@@ -45,6 +49,7 @@ footer a {
     max-width: 100%;
 }
  
+
 .footerLogo    { grid-area: logo; }
 .footerHorario { grid-area: horario; }
 .footerContacto{ grid-area: contacto; }
