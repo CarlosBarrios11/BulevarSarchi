@@ -44,25 +44,19 @@ y no quede tapado por el segundo nav*/
     /*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
 @media screen and (min-width: 261px) {
     .scrollTop{
-        scroll-margin-top: 275px;
+        scroll-margin-top: 190px;
     }
 }
 
-@media screen and (min-width: 281px) {
+@media screen and (min-width: 312px) {
     .scrollTop{
-        scroll-margin-top: 220px;
+         scroll-margin-top: 145px;
     }
 }
 
-@media screen and (min-width: 356px) {
+@media screen and (min-width: 433px) {
     .scrollTop{
-        scroll-margin-top: 170px;
-    }
-}
-
-@media screen and (min-width: 495px) {
-    .scrollTop{
-        scroll-margin-top: 115px;
+        scroll-margin-top: 100px;
     }
 }
 
