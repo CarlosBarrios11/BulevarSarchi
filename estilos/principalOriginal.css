@@ -1,14 +1,15 @@
 #contenedorVideo {
     position: relative;
     width: 100%;
-    height: 90vh;  
+    height: calc(100vh - 97.2px);  
     background: #000;
     overflow: hidden;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     #contenedorVideo {
-        height: 76vh;
+        height: calc(100vh - 202px); /*vh viewport height, representa el 100 de lo que el usuario ve en el momento*/
+        /*Se calcula la altura del contenedor del video, restando la cantidad de px del header y el nav*/
     }
 }
 

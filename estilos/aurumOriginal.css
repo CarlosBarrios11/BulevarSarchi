@@ -71,27 +71,21 @@ y no quede tapado por el segundo nav*/
 }
 
 /*En teléfonos pequeños se agrega un poco más de margen top en el segundo nav, ya que en pantallas más pequeñas más alto es el nav*/
-@media screen and (min-width: 261px) {
+@media screen and (min-width: 285px) {
     .scrollTop{
-        scroll-margin-top: 275px;
+        scroll-margin-top: 240px;
     }
 }
 
 @media screen and (min-width: 333px) {
     .scrollTop{
-        scroll-margin-top: 220px;
-    }
-}
-
-@media screen and (min-width: 339px) {
-    .scrollTop{
-        scroll-margin-top: 170px;
+        scroll-margin-top: 145px;
     }
 }
 
 @media screen and (min-width: 509px) {
     .scrollTop{
-        scroll-margin-top: 115px;
+        scroll-margin-top: 100px;
     }
 }
 
