@@ -2,12 +2,9 @@
   background-color: #c8990cef;
 }
 
-#salsas{
-  height: 25rem;
-}
-
-#orden-pa-picar{
-  height: 11rem;
+#salsas,
+#orden-pa-picar {
+  height: auto;
 }
 
 .textoCentro{

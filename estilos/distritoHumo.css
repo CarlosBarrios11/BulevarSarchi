@@ -21,10 +21,6 @@
     background-color: rgba(0, 0, 0, 0.83);
 }
 
-.tituloLista {
-    height: 12rem;
-}
-
 #salsasCuadro {
     height: 10rem;
 }
@@ -50,10 +46,6 @@
     #salsasCuadro {
     width: 20%;
     height: 11rem;
-    }
-
-    .tituloLista {
-        height: 15rem;
     }
 
     #grenuda, #famosa{
@@ -82,3 +74,9 @@
     }
 }
 
+@media screen and (min-width: 910px){
+ 
+  .tituloLista{
+    height: auto; /*Sobreescribir el height*/
+  }
+}
