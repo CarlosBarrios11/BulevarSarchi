@@ -48,27 +48,27 @@ footer{
 }
 
 #salsas {
-  height: 18rem;
+  height: auto;
   }
 
 #toppings {
-  height: 16rem;
+  height: auto;
 }
 
 #empaque {
-  height: 4rem;
+  height: auto;
 }
 
 #listaPostres {
-  height: 10rem;
+  height: auto;
 }
 
 #listaBubblesTea {
-  height: 18rem;
+  height: auto;
 }
 
 #listaEntradas {
-  height: 10rem;
+  height: auto;
 }
 
 .copyright{

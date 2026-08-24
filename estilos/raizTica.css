@@ -84,25 +84,8 @@ ul li {
     list-style: none;
 }
 
-#extrasFuertes {
-    height: 10rem;
-}
-
-
-#empanadasArtesanales {
-    height: 18rem;
-}
-
-#extrasBebidas {
-    height: 10rem;
-}
-
-#gaseosas {
-    height: 16rem;
-}
-
-#reposteriaTarjeta {
-    height: 6rem;
+.tituloLista {
+    height: auto;
 }
 
 .textoCentro{
