@@ -1,7 +1,7 @@
 #contenedorVideo {
     position: relative;
     width: 100%;
-    height: calc(100vh - 97.2px);  
+    height: calc(100dvh - 97.2px);  
     background: #000;
     overflow: hidden;
 }
